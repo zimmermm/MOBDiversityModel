@@ -1,0 +1,60 @@
+{
+    "Forcing": {
+        "Simstrat calibration": "./modeldefinition/physicalmodel/seasonal/3_methane_iteration_revised/Rotsee_Output/",
+        "Weather": "./modeldefinition/physicalmodel/seasonal/3_methane_iteration_revised/Rotsee_Input/rotsee_forcing.dat",
+        "fwind": 0.5,
+        "Inflow": ""
+    },
+    "Simulation": {
+        "Start": "01.01.2016",
+        "End": "31.12.2016",
+        "dt": 0.01,
+        "repetitions": 7,
+        "Name": "2016",
+        "thinning": 100
+    },
+    "Morphology": {
+        "Bathymetry": {
+            "areas": [
+                494199.0,
+                440930.0,
+                393912.0,
+                348221.0,
+                301994.0,
+                240935.0,
+                153063.0,
+                69403.0,
+                18691.0
+            ],
+            "zareas": [
+                0.0,
+                2.0,
+                4.0,
+                6.0,
+                8.0,
+                10.0,
+                12.0,
+                14.0,
+                16.0
+            ]
+        },
+        "Maxdepth": 16.0,
+        "Gridcells": 160
+    },
+    "Parameter": {
+        "OM_sedimentation_rate": 0.108441,
+        "sediment_exchange_k": 1.8e-5,
+        "sediment_kI_o2": 5000.0732,
+        "sediment_diffusivity": 0.005,
+        "o2_consumption_rate": 3185.0,
+        "background_mob_rate": 0.0,
+        "sediment_vmax": 0.03,
+        "baseline_mortality": 0.0024
+    },
+    "Growthmodel": [
+        [0.9, 0.9, 0.8], 
+        [0.3, 0.5, 0.54], 
+        [0.05, 0.1, 0.34],
+        [0.47, 0.99, 0.36]
+    ]
+}

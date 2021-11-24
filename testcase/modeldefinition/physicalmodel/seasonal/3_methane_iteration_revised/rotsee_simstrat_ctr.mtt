@@ -1,0 +1,18 @@
+ PARAMETER STATISTICAL MATRICES: CASE rotsee_simstrat_ctr
+
+ OPTIMISATION ITERATION NUMBER 13
+
+
+ Parameter covariance matrix ----->
+
+ Not requested: ICOV in PEST control file set to 0.
+
+
+ Parameter correlation coefficient matrix ----->
+
+ Not requested: ICOR in PEST control file set to 0.
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+ Not requested: IEIG in PEST control file set to 0.

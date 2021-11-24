@@ -1,0 +1,1826 @@
+
+                PEST RUN RECORD: CASE rotsee_simstrat_ctr
+
+
+PEST Version: 14.2
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    19
+   Number of adjustable parameters                :     8
+   Number of parameter groups                     :     1
+   Number of observations                         :   458
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   model_wrapper.bat
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      E:\polybox\SURF\MobTrait\results\physicalmodel\seasonal\3_methane_iteration_revised\json_rotsee_simstrat.tpl
+      E:\polybox\SURF\MobTrait\results\diversity/modeldefinition.tpl
+   for model input files:
+      E:\polybox\SURF\MobTrait\results\physicalmodel\seasonal\3_methane_iteration_revised\json_rotsee_simstrat.par
+      E:\polybox\SURF\MobTrait\results\diversity/modeldefinition.json
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point omitted where possible to save space.)
+
+   Instruction files:
+      T_out_output.ins
+      CH4_out_output.ins
+   for reading model output files:
+      Rotsee_Output/T_out.dat
+      E:\polybox\SURF\MobTrait\results\diversity/CH4_out.dat
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+fit          relative    1.0000E-02  1.0000E-05    switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+lat          fixed               na        47.3000          na             na
+p_air        fixed               na        960.000          na             na
+a_seiche     none              factor     1.896583E-03   1.000000E-05   1.000000E-02
+q_nn         none              factor     0.822603       0.700000        1.25000    
+f_wind       fixed               na       0.500000          na             na
+c10          none              factor     0.409504       0.300000        2.00000    
+cd           fixed               na       2.000000E-03      na             na
+fgeo         fixed               na        0.00000          na             na
+k_min        fixed               na       1.000000E-30      na             na
+p1           none              factor     0.984071       0.800000        1.20000    
+p2           none              factor      1.10000       0.900000        1.10000    
+beta         fixed               na       0.350000          na             na
+albsw        none              factor     0.106931        0.00000       0.300000    
+sediment_exc fixed               na       1.800000E-05      na             na
+sediment_dif fixed               na       5.000000E-03      na             na
+sediment_vma fixed               na        10.0000          na             na
+om_sedimenta none              factor     0.219691       1.000000E-02    1.00000    
+sediment_ki_ none              factor      49.9443        10.0000        3000.00    
+o2_consumpti fixed               na       1.000000E-02      na             na
+
+Name         Group          Scale         Offset        Model command number
+lat          none          1.00000        0.00000            1
+p_air        none          1.00000        0.00000            1
+a_seiche     fit           1.00000        0.00000            1
+q_nn         fit           1.00000        0.00000            1
+f_wind       none          1.00000        0.00000            1
+c10          fit           1.00000        0.00000            1
+cd           none          1.00000        0.00000            1
+fgeo         none          1.00000        0.00000            1
+k_min        none          1.00000        0.00000            1
+p1           fit           1.00000        0.00000            1
+p2           fit           1.00000        0.00000            1
+beta         none          1.00000        0.00000            1
+albsw        fit           1.00000        0.00000            1
+sediment_exc none          1.00000        0.00000            1
+sediment_dif none          1.00000        0.00000            1
+sediment_vma none          1.00000        0.00000            1
+om_sedimenta fit           1.00000        0.00000            1
+sediment_ki_ fit           1.00000        0.00000            1
+o2_consumpti none          1.00000        0.00000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ temp0                   12.4400         2.7052E-02   temp        
+ temp1                   9.84000         2.7052E-02   temp        
+ temp2                   8.41000         2.7052E-02   temp        
+ temp3                   7.14000         2.7052E-02   temp        
+ temp4                   6.42000         2.7052E-02   temp        
+ temp5                   5.72000         2.7052E-02   temp        
+ temp6                   5.47000         2.7052E-02   temp        
+ temp7                   5.24000         2.7052E-02   temp        
+ temp8                   5.11000         2.7052E-02   temp        
+ temp9                   4.90000         2.7052E-02   temp        
+ temp10                  4.78000         2.7052E-02   temp        
+ temp11                  4.77000         2.7052E-02   temp        
+ temp12                  4.67000         2.7052E-02   temp        
+ temp13                  4.63000         2.7052E-02   temp        
+ temp14                  4.60000         2.7052E-02   temp        
+ temp15                  4.62000         2.7052E-02   temp        
+ temp16                  4.62000         2.7052E-02   temp        
+ temp17                  22.2500         2.7052E-02   temp        
+ temp18                  22.1900         2.7052E-02   temp        
+ temp19                  22.1300         2.7052E-02   temp        
+ temp20                  22.0700         2.7052E-02   temp        
+ temp21                  21.5100         2.7052E-02   temp        
+ temp22                  20.1400         2.7052E-02   temp        
+ temp23                  15.9900         2.7052E-02   temp        
+ temp24                  13.2800         2.7052E-02   temp        
+ temp25                  10.8800         2.7052E-02   temp        
+ temp26                  9.62000         2.7052E-02   temp        
+ temp27                  7.44000         2.7052E-02   temp        
+ temp28                  6.50000         2.7052E-02   temp        
+ temp29                  6.31000         2.7052E-02   temp        
+ temp30                  5.96000         2.7052E-02   temp        
+ temp31                  5.79000         2.7052E-02   temp        
+ temp32                  5.79000         2.7052E-02   temp        
+ temp33                  5.79000         2.7052E-02   temp        
+ temp34                  22.8700         2.7052E-02   temp        
+ temp35                  22.6900         2.7052E-02   temp        
+ temp36                  22.5100         2.7052E-02   temp        
+ temp37                  22.0000         2.7052E-02   temp        
+ temp38                  21.2800         2.7052E-02   temp        
+ temp39                  20.3600         2.7052E-02   temp        
+ temp40                  19.3000         2.7052E-02   temp        
+ temp41                  16.0200         2.7052E-02   temp        
+ temp42                  12.7500         2.7052E-02   temp        
+ temp43                  10.7000         2.7052E-02   temp        
+ temp44                  8.70000         2.7052E-02   temp        
+ temp45                  7.66000         2.7052E-02   temp        
+ temp46                  6.62000         2.7052E-02   temp        
+ temp47                  6.14000         2.7052E-02   temp        
+ temp48                  6.10000         2.7052E-02   temp        
+ temp49                  5.92000         2.7052E-02   temp        
+ temp50                  5.92000         2.7052E-02   temp        
+ temp51                  19.5000         2.7052E-02   temp        
+ temp52                  19.4700         2.7052E-02   temp        
+ temp53                  19.4400         2.7052E-02   temp        
+ temp54                  19.4100         2.7052E-02   temp        
+ temp55                  18.7500         2.7052E-02   temp        
+ temp56                  17.2000         2.7052E-02   temp        
+ temp57                  14.1600         2.7052E-02   temp        
+ temp58                  11.0100         2.7052E-02   temp        
+ temp59                  9.09000         2.7052E-02   temp        
+ temp60                  8.46000         2.7052E-02   temp        
+ temp61                  7.49000         2.7052E-02   temp        
+ temp62                  7.10000         2.7052E-02   temp        
+ temp63                  6.82000         2.7052E-02   temp        
+ temp64                  17.3500         2.7052E-02   temp        
+ temp65                  17.3300         2.7052E-02   temp        
+ temp66                  17.3200         2.7052E-02   temp        
+ temp67                  17.3100         2.7052E-02   temp        
+ temp68                  17.3000         2.7052E-02   temp        
+ temp69                  17.2800         2.7052E-02   temp        
+ temp70                  17.0400         2.7052E-02   temp        
+ temp71                  14.3000         2.7052E-02   temp        
+ temp72                  10.7700         2.7052E-02   temp        
+ temp73                  9.40000         2.7052E-02   temp        
+ temp74                  8.11000         2.7052E-02   temp        
+ temp75                  7.63000         2.7052E-02   temp        
+ temp76                  7.23000         2.7052E-02   temp        
+ temp77                  6.93000         2.7052E-02   temp        
+ temp78                  14.5700         2.7052E-02   temp        
+ temp79                  14.5900         2.7052E-02   temp        
+ temp80                  14.5900         2.7052E-02   temp        
+ temp81                  14.5900         2.7052E-02   temp        
+ temp82                  14.5800         2.7052E-02   temp        
+ temp83                  14.5900         2.7052E-02   temp        
+ temp84                  14.5900         2.7052E-02   temp        
+ temp85                  14.5800         2.7052E-02   temp        
+ temp86                  14.3800         2.7052E-02   temp        
+ temp87                  11.5400         2.7052E-02   temp        
+ temp88                  8.96000         2.7052E-02   temp        
+ temp89                  7.89000         2.7052E-02   temp        
+ temp90                  7.46000         2.7052E-02   temp        
+ temp91                  7.02000         2.7052E-02   temp        
+ temp92                  6.72000         2.7052E-02   temp        
+ temp93                  6.48000         2.7052E-02   temp        
+ temp94                  6.48000         2.7052E-02   temp        
+ temp95                  9.41000         2.7052E-02   temp        
+ temp96                  8.76000         2.7052E-02   temp        
+ temp97                  8.01000         2.7052E-02   temp        
+ temp98                  6.66000         2.7052E-02   temp        
+ temp99                  5.86000         2.7052E-02   temp        
+ temp100                 5.40000         2.7052E-02   temp        
+ temp101                 4.98000         2.7052E-02   temp        
+ temp102                 4.85000         2.7052E-02   temp        
+ temp103                 4.79000         2.7052E-02   temp        
+ temp104                 4.63000         2.7052E-02   temp        
+ temp105                 4.58000         2.7052E-02   temp        
+ temp106                 4.48000         2.7052E-02   temp        
+ temp107                 4.45000         2.7052E-02   temp        
+ temp108                 4.39000         2.7052E-02   temp        
+ temp109                 4.28000         2.7052E-02   temp        
+ temp110                 4.25000         2.7052E-02   temp        
+ temp111                 4.25000         2.7052E-02   temp        
+ temp112                 19.2100         2.7052E-02   temp        
+ temp113                 18.0000         2.7052E-02   temp        
+ temp114                 16.6600         2.7052E-02   temp        
+ temp115                 15.0300         2.7052E-02   temp        
+ temp116                 12.1400         2.7052E-02   temp        
+ temp117                 9.27000         2.7052E-02   temp        
+ temp118                 7.48000         2.7052E-02   temp        
+ temp119                 7.11000         2.7052E-02   temp        
+ temp120                 6.98000         2.7052E-02   temp        
+ temp121                 6.88000         2.7052E-02   temp        
+ temp122                 6.78000         2.7052E-02   temp        
+ temp123                 6.73000         2.7052E-02   temp        
+ temp124                 6.69000         2.7052E-02   temp        
+ temp125                 26.6200         2.7052E-02   temp        
+ temp126                 26.3300         2.7052E-02   temp        
+ temp127                 25.2600         2.7052E-02   temp        
+ temp128                 22.1500         2.7052E-02   temp        
+ temp129                 17.4100         2.7052E-02   temp        
+ temp130                 14.1500         2.7052E-02   temp        
+ temp131                 11.3000         2.7052E-02   temp        
+ temp132                 9.60000         2.7052E-02   temp        
+ temp133                 8.08000         2.7052E-02   temp        
+ temp134                 7.78000         2.7052E-02   temp        
+ temp135                 7.17000         2.7052E-02   temp        
+ temp136                 7.35000         2.7052E-02   temp        
+ temp137                 6.92000         2.7052E-02   temp        
+ temp138                 20.4800         2.7052E-02   temp        
+ temp139                 20.4100         2.7052E-02   temp        
+ temp140                 20.3300         2.7052E-02   temp        
+ temp141                 20.2700         2.7052E-02   temp        
+ temp142                 20.2000         2.7052E-02   temp        
+ temp143                 18.9500         2.7052E-02   temp        
+ temp144                 16.6500         2.7052E-02   temp        
+ temp145                 12.3400         2.7052E-02   temp        
+ temp146                 9.81000         2.7052E-02   temp        
+ temp147                 8.64000         2.7052E-02   temp        
+ temp148                 7.79000         2.7052E-02   temp        
+ temp149                 7.52000         2.7052E-02   temp        
+ temp150                 7.20000         2.7052E-02   temp        
+ temp151                 7.05000         2.7052E-02   temp        
+ temp152                 15.3800         2.7052E-02   temp        
+ temp153                 15.4200         2.7052E-02   temp        
+ temp154                 15.3900         2.7052E-02   temp        
+ temp155                 15.3800         2.7052E-02   temp        
+ temp156                 15.3900         2.7052E-02   temp        
+ temp157                 15.3900         2.7052E-02   temp        
+ temp158                 15.3800         2.7052E-02   temp        
+ temp159                 15.3700         2.7052E-02   temp        
+ temp160                 13.3400         2.7052E-02   temp        
+ temp161                 11.3100         2.7052E-02   temp        
+ temp162                 9.28000         2.7052E-02   temp        
+ temp163                 7.89000         2.7052E-02   temp        
+ temp164                 7.85000         2.7052E-02   temp        
+ temp165                 7.40000         2.7052E-02   temp        
+ temp166                 7.25000         2.7052E-02   temp        
+ temp167                 7.17000         2.7052E-02   temp        
+ temp168                 7.17000         2.7052E-02   temp        
+ temp169                 5.12000         2.7052E-02   temp        
+ temp170                 5.10000         2.7052E-02   temp        
+ temp171                 5.06000         2.7052E-02   temp        
+ temp172                 4.99000         2.7052E-02   temp        
+ temp173                 4.97000         2.7052E-02   temp        
+ temp174                 4.98000         2.7052E-02   temp        
+ temp175                 4.97000         2.7052E-02   temp        
+ temp176                 4.95000         2.7052E-02   temp        
+ temp177                 4.95000         2.7052E-02   temp        
+ temp178                 4.93000         2.7052E-02   temp        
+ temp179                 4.93000         2.7052E-02   temp        
+ temp180                 4.93000         2.7052E-02   temp        
+ temp181                 4.96000         2.7052E-02   temp        
+ temp182                 4.98000         2.7052E-02   temp        
+ temp183                 4.98000         2.7052E-02   temp        
+ temp184                 4.98000         2.7052E-02   temp        
+ temp185                 4.98000         2.7052E-02   temp        
+ temp186                 16.9900         2.7052E-02   temp        
+ temp187                 15.9800         2.7052E-02   temp        
+ temp188                 14.8300         2.7052E-02   temp        
+ temp189                 12.4400         2.7052E-02   temp        
+ temp190                 11.1600         2.7052E-02   temp        
+ temp191                 9.49000         2.7052E-02   temp        
+ temp192                 7.36000         2.7052E-02   temp        
+ temp193                 6.90000         2.7052E-02   temp        
+ temp194                 6.87000         2.7052E-02   temp        
+ temp195                 6.26000         2.7052E-02   temp        
+ temp196                 6.35000         2.7052E-02   temp        
+ temp197                 6.11000         2.7052E-02   temp        
+ temp198                 6.35000         2.7052E-02   temp        
+ temp199                 6.06000         2.7052E-02   temp        
+ temp200                 13.9900         2.7052E-02   temp        
+ temp201                 12.4200         2.7052E-02   temp        
+ temp202                 11.5300         2.7052E-02   temp        
+ temp203                 9.73000         2.7052E-02   temp        
+ temp204                 7.58000         2.7052E-02   temp        
+ temp205                 6.80000         2.7052E-02   temp        
+ temp206                 6.50000         2.7052E-02   temp        
+ temp207                 6.26000         2.7052E-02   temp        
+ temp208                 6.17000         2.7052E-02   temp        
+ temp209                 6.14000         2.7052E-02   temp        
+ temp210                 6.07000         2.7052E-02   temp        
+ temp211                 5.96000         2.7052E-02   temp        
+ temp212                 18.7200         2.7052E-02   temp        
+ temp213                 17.6400         2.7052E-02   temp        
+ temp214                 16.0600         2.7052E-02   temp        
+ temp215                 12.5200         2.7052E-02   temp        
+ temp216                 9.22000         2.7052E-02   temp        
+ temp217                 7.63000         2.7052E-02   temp        
+ temp218                 6.88000         2.7052E-02   temp        
+ temp219                 6.51000         2.7052E-02   temp        
+ temp220                 6.37000         2.7052E-02   temp        
+ temp221                 6.30000         2.7052E-02   temp        
+ temp222                 6.21000         2.7052E-02   temp        
+ temp223                 6.14000         2.7052E-02   temp        
+ temp224                 23.6900         2.7052E-02   temp        
+ temp225                 23.1000         2.7052E-02   temp        
+ temp226                 22.2400         2.7052E-02   temp        
+ temp227                 21.3200         2.7052E-02   temp        
+ temp228                 20.3400         2.7052E-02   temp        
+ temp229                 15.9500         2.7052E-02   temp        
+ temp230                 12.0400         2.7052E-02   temp        
+ temp231                 9.11000         2.7052E-02   temp        
+ temp232                 7.36000         2.7052E-02   temp        
+ temp233                 7.09000         2.7052E-02   temp        
+ temp234                 6.66000         2.7052E-02   temp        
+ temp235                 6.44000         2.7052E-02   temp        
+ temp236                 6.35000         2.7052E-02   temp        
+ temp237                 6.28000         2.7052E-02   temp        
+ temp238                 18.4000         2.7052E-02   temp        
+ temp239                 18.4500         2.7052E-02   temp        
+ temp240                 18.4400         2.7052E-02   temp        
+ temp241                 18.4400         2.7052E-02   temp        
+ temp242                 18.4100         2.7052E-02   temp        
+ temp243                 18.4300         2.7052E-02   temp        
+ temp244                 15.0100         2.7052E-02   temp        
+ temp245                 11.5600         2.7052E-02   temp        
+ temp246                 9.47000         2.7052E-02   temp        
+ temp247                 7.98000         2.7052E-02   temp        
+ temp248                 6.99000         2.7052E-02   temp        
+ temp249                 6.79000         2.7052E-02   temp        
+ temp250                 6.62000         2.7052E-02   temp        
+ temp251                 6.45000         2.7052E-02   temp        
+ temp252                 14.3800         2.7052E-02   temp        
+ temp253                 14.3900         2.7052E-02   temp        
+ temp254                 14.3800         2.7052E-02   temp        
+ temp255                 14.4000         2.7052E-02   temp        
+ temp256                 14.4000         2.7052E-02   temp        
+ temp257                 14.3900         2.7052E-02   temp        
+ temp258                 12.2000         2.7052E-02   temp        
+ temp259                 9.22000         2.7052E-02   temp        
+ temp260                 7.99000         2.7052E-02   temp        
+ temp261                 7.15000         2.7052E-02   temp        
+ temp262                 6.88000         2.7052E-02   temp        
+ temp263                 6.68000         2.7052E-02   temp        
+ temp264                 6.55000         2.7052E-02   temp        
+ temp265                 13.1100         2.7052E-02   temp        
+ temp266                 13.1100         2.7052E-02   temp        
+ temp267                 13.1000         2.7052E-02   temp        
+ temp268                 13.1100         2.7052E-02   temp        
+ temp269                 13.1100         2.7052E-02   temp        
+ temp270                 13.1000         2.7052E-02   temp        
+ temp271                 13.0900         2.7052E-02   temp        
+ temp272                 13.0500         2.7052E-02   temp        
+ temp273                 12.6700         2.7052E-02   temp        
+ temp274                 10.1300         2.7052E-02   temp        
+ temp275                 8.06000         2.7052E-02   temp        
+ temp276                 7.39000         2.7052E-02   temp        
+ temp277                 7.02000         2.7052E-02   temp        
+ temp278                 6.79000         2.7052E-02   temp        
+ temp279                 6.60000         2.7052E-02   temp        
+ temp280                 6.60000         2.7052E-02   temp        
+ temp281                 6.60000         2.7052E-02   temp        
+ temp282                 13.0400         2.7052E-02   temp        
+ temp283                 13.0400         2.7052E-02   temp        
+ temp284                 13.0300         2.7052E-02   temp        
+ temp285                 13.0300         2.7052E-02   temp        
+ temp286                 13.0300         2.7052E-02   temp        
+ temp287                 13.0100         2.7052E-02   temp        
+ temp288                 13.0000         2.7052E-02   temp        
+ temp289                 12.6200         2.7052E-02   temp        
+ temp290                 10.1000         2.7052E-02   temp        
+ temp291                 8.07000         2.7052E-02   temp        
+ temp292                 7.40000         2.7052E-02   temp        
+ temp293                 7.07000         2.7052E-02   temp        
+ temp294                 6.79000         2.7052E-02   temp        
+ temp295                 6.55000         2.7052E-02   temp        
+ temp296                 10.7000         2.7052E-02   temp        
+ temp297                 10.7100         2.7052E-02   temp        
+ temp298                 10.7100         2.7052E-02   temp        
+ temp299                 10.7100         2.7052E-02   temp        
+ temp300                 10.7100         2.7052E-02   temp        
+ temp301                 10.7000         2.7052E-02   temp        
+ temp302                 10.7000         2.7052E-02   temp        
+ temp303                 10.7000         2.7052E-02   temp        
+ temp304                 10.6900         2.7052E-02   temp        
+ temp305                 8.37000         2.7052E-02   temp        
+ temp306                 7.33000         2.7052E-02   temp        
+ temp307                 7.02000         2.7052E-02   temp        
+ temp308                 6.83000         2.7052E-02   temp        
+ temp309                 6.54000         2.7052E-02   temp        
+ temp310                 8.87000         2.7052E-02   temp        
+ temp311                 8.87000         2.7052E-02   temp        
+ temp312                 8.88000         2.7052E-02   temp        
+ temp313                 8.87000         2.7052E-02   temp        
+ temp314                 8.86000         2.7052E-02   temp        
+ temp315                 8.87000         2.7052E-02   temp        
+ temp316                 8.87000         2.7052E-02   temp        
+ temp317                 8.86000         2.7052E-02   temp        
+ temp318                 8.85000         2.7052E-02   temp        
+ temp319                 8.85000         2.7052E-02   temp        
+ temp320                 7.72000         2.7052E-02   temp        
+ temp321                 7.11000         2.7052E-02   temp        
+ temp322                 6.83000         2.7052E-02   temp        
+ temp323                 6.59000         2.7052E-02   temp        
+ temp324                 6.48000         2.7052E-02   temp        
+ temp325                 6.96000         2.7052E-02   temp        
+ temp326                 6.96000         2.7052E-02   temp        
+ temp327                 6.96000         2.7052E-02   temp        
+ temp328                 6.96000         2.7052E-02   temp        
+ temp329                 6.96000         2.7052E-02   temp        
+ temp330                 6.96000         2.7052E-02   temp        
+ temp331                 6.96000         2.7052E-02   temp        
+ temp332                 6.96000         2.7052E-02   temp        
+ temp333                 6.96000         2.7052E-02   temp        
+ temp334                 6.96000         2.7052E-02   temp        
+ temp335                 6.96000         2.7052E-02   temp        
+ temp336                 6.93000         2.7052E-02   temp        
+ temp337                 6.86000         2.7052E-02   temp        
+ temp338                 6.61000         2.7052E-02   temp        
+ temp339                 6.07000         2.7052E-02   temp        
+ temp340                 6.07000         2.7052E-02   temp        
+ temp341                 6.06000         2.7052E-02   temp        
+ temp342                 6.06000         2.7052E-02   temp        
+ temp343                 6.05000         2.7052E-02   temp        
+ temp344                 6.05000         2.7052E-02   temp        
+ temp345                 6.05000         2.7052E-02   temp        
+ temp346                 6.05000         2.7052E-02   temp        
+ temp347                 6.04000         2.7052E-02   temp        
+ temp348                 6.04000         2.7052E-02   temp        
+ temp349                 6.04000         2.7052E-02   temp        
+ temp350                 5.98000         2.7052E-02   temp        
+ temp351                 6.38000         2.7052E-02   temp        
+ temp352                 6.61000         2.7052E-02   temp        
+ temp353                 6.51000         2.7052E-02   temp        
+ temp354                 1.37000         2.7052E-02   temp        
+ temp355                 1.40000         2.7052E-02   temp        
+ temp356                 1.45000         2.7052E-02   temp        
+ temp357                 1.84000         2.7052E-02   temp        
+ temp358                 2.01000         2.7052E-02   temp        
+ temp359                 2.05000         2.7052E-02   temp        
+ temp360                 2.31000         2.7052E-02   temp        
+ temp361                 2.38000         2.7052E-02   temp        
+ temp362                 2.52000         2.7052E-02   temp        
+ temp363                 2.67000         2.7052E-02   temp        
+ temp364                 2.75000         2.7052E-02   temp        
+ temp365                 2.89000         2.7052E-02   temp        
+ temp366                 2.99000         2.7052E-02   temp        
+ temp367                 3.16000         2.7052E-02   temp        
+ ch40                    1.10000         4.7445E-03   ch4         
+ ch41                    1.41000         4.7445E-03   ch4         
+ ch42                   0.540000         4.7445E-03   ch4         
+ ch43                   7.000000E-02     4.7445E-03   ch4         
+ ch44                   0.440000         4.7445E-03   ch4         
+ ch45                   0.190000         4.7445E-03   ch4         
+ ch46                   0.680000         4.7445E-03   ch4         
+ ch47                    20.2300         4.7445E-03   ch4         
+ ch48                    18.1900         4.7445E-03   ch4         
+ ch49                    1.95000         4.7445E-03   ch4         
+ ch410                   2.77000         4.7445E-03   ch4         
+ ch411                  0.260000         4.7445E-03   ch4         
+ ch412                  1.000000E-02     4.7445E-03   ch4         
+ ch413                   11.6100         4.7445E-03   ch4         
+ ch414                   37.2300         4.7445E-03   ch4         
+ ch415                   42.2800         4.7445E-03   ch4         
+ ch416                   61.2700         4.7445E-03   ch4         
+ ch417                   123.840         4.7445E-03   ch4         
+ ch418                   444.630         4.7445E-03   ch4         
+ ch419                   612.760         4.7445E-03   ch4         
+ ch420                  0.310000         4.7445E-03   ch4         
+ ch421                  0.280000         4.7445E-03   ch4         
+ ch422                  0.340000         4.7445E-03   ch4         
+ ch423                  0.230000         4.7445E-03   ch4         
+ ch424                  0.260000         4.7445E-03   ch4         
+ ch425                  9.000000E-02     4.7445E-03   ch4         
+ ch426                   24.3300         4.7445E-03   ch4         
+ ch427                   72.6300         4.7445E-03   ch4         
+ ch428                   87.3800         4.7445E-03   ch4         
+ ch429                   207.070         4.7445E-03   ch4         
+ ch430                   237.020         4.7445E-03   ch4         
+ ch431                   395.760         4.7445E-03   ch4         
+ ch432                   594.880         4.7445E-03   ch4         
+ ch433                   1404.09         4.7445E-03   ch4         
+ ch434                  0.630000         4.7445E-03   ch4         
+ ch435                  0.630000         4.7445E-03   ch4         
+ ch436                  0.680000         4.7445E-03   ch4         
+ ch437                   5.67000         4.7445E-03   ch4         
+ ch438                   60.5900         4.7445E-03   ch4         
+ ch439                   99.7600         4.7445E-03   ch4         
+ ch440                   155.480         4.7445E-03   ch4         
+ ch441                   166.570         4.7445E-03   ch4         
+ ch442                   442.200         4.7445E-03   ch4         
+ ch443                   440.030         4.7445E-03   ch4         
+ ch444                   1014.24         4.7445E-03   ch4         
+ ch445                  7.000000E-02     4.7445E-03   ch4         
+ ch446                  7.000000E-02     4.7445E-03   ch4         
+ ch447                  0.180000         4.7445E-03   ch4         
+ ch448                  0.220000         4.7445E-03   ch4         
+ ch449                   4.96000         4.7445E-03   ch4         
+ ch450                   80.5600         4.7445E-03   ch4         
+ ch451                   146.670         4.7445E-03   ch4         
+ ch452                   184.910         4.7445E-03   ch4         
+ ch453                   230.500         4.7445E-03   ch4         
+ ch454                   350.280         4.7445E-03   ch4         
+ ch455                   503.710         4.7445E-03   ch4         
+ ch456                   1199.88         4.7445E-03   ch4         
+ ch457                   1.39000         4.7445E-03   ch4         
+ ch458                   1.26000         4.7445E-03   ch4         
+ ch459                  0.960000         4.7445E-03   ch4         
+ ch460                   1.00000         4.7445E-03   ch4         
+ ch461                   1.05000         4.7445E-03   ch4         
+ ch462                   2.46000         4.7445E-03   ch4         
+ ch463                   202.740         4.7445E-03   ch4         
+ ch464                   215.460         4.7445E-03   ch4         
+ ch465                   338.280         4.7445E-03   ch4         
+ ch466                   634.180         4.7445E-03   ch4         
+ ch467                   1095.10         4.7445E-03   ch4         
+ ch468                  0.130000         4.7445E-03   ch4         
+ ch469                  0.140000         4.7445E-03   ch4         
+ ch470                  6.000000E-02     4.7445E-03   ch4         
+ ch471                   10.7000         4.7445E-03   ch4         
+ ch472                   481.000         4.7445E-03   ch4         
+ ch473                   640.130         4.7445E-03   ch4         
+ ch474                   792.230         4.7445E-03   ch4         
+ ch475                   1416.92         4.7445E-03   ch4         
+ ch476                  0.440000         4.7445E-03   ch4         
+ ch477                  0.710000         4.7445E-03   ch4         
+ ch478                  0.690000         4.7445E-03   ch4         
+ ch479                  0.540000         4.7445E-03   ch4         
+ ch480                  0.880000         4.7445E-03   ch4         
+ ch481                  0.480000         4.7445E-03   ch4         
+ ch482                   80.0100         4.7445E-03   ch4         
+ ch483                   695.700         4.7445E-03   ch4         
+ ch484                   1349.96         4.7445E-03   ch4         
+ ch485                   1977.73         4.7445E-03   ch4         
+ ch486                  0.330000         4.7445E-03   ch4         
+ ch487                   17.9100         4.7445E-03   ch4         
+ ch488                   590.950         4.7445E-03   ch4         
+ ch489                   1031.00         4.7445E-03   ch4         
+
+
+Control settings:-
+
+   Initial lambda                                               :  5.0000    
+   Lambda adjustment factor                                     :  2.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 1.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   :  5.0000
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.50000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   3
+   Minimal relative parameter change indicating convergence     : 0.10000E-01
+   Number of consecutive iterations with minimal param change   :   3
+   Maximum number of optimisation iterations                    :  20
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   544.44    
+   Contribution to phi from observation group "temp"        =  0.22331    
+   Contribution to phi from observation group "ch4"         =   544.22    
+
+      Current parameter values
+      lat              47.3000    
+      p_air            960.000    
+      a_seiche        1.896583E-03
+      q_nn            0.822603    
+      f_wind          0.500000    
+      c10             0.409504    
+      cd              2.000000E-03
+      fgeo             0.00000    
+      k_min           1.000000E-30
+      p1              0.984071    
+      p2               1.10000    
+      beta            0.350000    
+      albsw           0.106931    
+      sediment_exc    1.800000E-05
+      sediment_dif    5.000000E-03
+      sediment_vma     10.0000    
+      om_sedimenta    0.219691    
+      sediment_ki_     49.9443    
+      o2_consumpti    1.000000E-02
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   544.44    
+   Contribution to phi from observation group "temp"        :  0.22331    
+   Contribution to phi from observation group "ch4"         :   544.22    
+
+       Lambda =   5.0000     ----->
+          Phi =   491.45      (  0.903 of starting phi)
+
+       Lambda =   2.5000     ----->
+          Phi =   482.80      (  0.887 of starting phi)
+
+       Lambda =   1.2500     ----->
+          Phi =   478.41      (  0.879 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   478.41    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.077227E-03             a_seiche         1.896583E-03
+      q_nn            0.843836                 q_nn             0.822603    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.331122                 c10              0.409504    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.975416                 p1               0.984071    
+      p2              0.900000                 p2                1.10000    
+      beta            0.350000                 beta             0.350000    
+      albsw           2.138615E-02             albsw            0.106931    
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.197707                 om_sedimenta     0.219691    
+      sediment_ki_     49.9681                 sediment_ki_      49.9443    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  5.000     ["albsw"]
+   Maximum relative change: 0.8000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 2
+   Model calls so far             : 12
+   Starting phi for this iteration                          :   478.41    
+   Contribution to phi from observation group "temp"        :  0.30923    
+   Contribution to phi from observation group "ch4"         :   478.11    
+       param "p2" frozen: - update vector out of bounds
+
+       Lambda =  0.62500     ----->
+          Phi =   25.145      (  0.053 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:   25.145    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        4.462447E-03             a_seiche         3.077227E-03
+      q_nn            0.808061                 q_nn             0.843836    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.331122    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.980230                 p1               0.975416    
+      p2              0.900000                 p2               0.900000    
+      beta            0.350000                 beta             0.350000    
+      albsw           4.277230E-03             albsw            2.138615E-02
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.187232                 om_sedimenta     0.197707    
+      sediment_ki_     50.0673                 sediment_ki_      49.9681    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  5.000     ["albsw"]
+   Maximum relative change: 0.8000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 3
+   Model calls so far             : 21
+   Starting phi for this iteration                          :   25.145    
+   Contribution to phi from observation group "temp"        :  0.33870    
+   Contribution to phi from observation group "ch4"         :   24.807    
+   All frozen parameters freed.
+       param "c10" frozen: gradient and update vectors out of bounds
+
+       Lambda =  0.31250     ----->
+          Phi =   24.070      (  0.957 of starting phi)
+
+       Lambda =  0.15625     ----->
+          Phi =   24.070      (  0.957 of starting phi)
+
+       Lambda =  0.62500     ----->
+          Phi =   24.069      (  0.957 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   24.069    
+   Relative phi reduction between optimisation iterations less than 0.1000
+   Switch to higher order derivatives calculation
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        4.307583E-03             a_seiche         4.462447E-03
+      q_nn            0.784518                 q_nn             0.808061    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.987274                 p1               0.980230    
+      p2              0.941801                 p2               0.900000    
+      beta            0.350000                 beta             0.350000    
+      albsw           1.283169E-02             albsw            4.277230E-03
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.195193                 om_sedimenta     0.187232    
+      sediment_ki_     50.0615                 sediment_ki_      50.0673    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  3.000     ["albsw"]
+   Maximum relative change:  2.000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 4
+   Model calls so far             : 32
+   Starting phi for this iteration                          :   24.069    
+   Contribution to phi from observation group "temp"        :  0.31335    
+   Contribution to phi from observation group "ch4"         :   23.756    
+   All frozen parameters freed.
+       param "c10" frozen: - update vector out of bounds
+
+       Lambda =  0.62500     ----->
+          Phi =   23.915      (  0.994 of starting phi)
+
+       Lambda =  0.31250     ----->
+          Phi =   23.916      (  0.994 of starting phi)
+
+       Lambda =   1.2500     ----->
+          Phi =   23.915      (  0.994 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.915    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        4.235565E-03             a_seiche         4.307583E-03
+      q_nn            0.772211                 q_nn             0.784518    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.987673                 p1               0.987274    
+      p2              0.950412                 p2               0.941801    
+      beta            0.350000                 beta             0.350000    
+      albsw           1.026535E-02             albsw            1.283169E-02
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.193853                 om_sedimenta     0.195193    
+      sediment_ki_     50.0617                 sediment_ki_      50.0615    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  1.250     ["albsw"]
+   Maximum relative change: 0.2000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 5
+   Model calls so far             : 51
+   Starting phi for this iteration                          :   23.915    
+   Contribution to phi from observation group "temp"        :  0.31283    
+   Contribution to phi from observation group "ch4"         :   23.602    
+   All frozen parameters freed.
+       param "c10" frozen: - update vector out of bounds
+
+       Lambda =   1.2500     ----->
+          Phi =   23.400      (  0.978 of starting phi)
+
+       Lambda =  0.62500     ----->
+          Phi =   23.404      (  0.979 of starting phi)
+
+       Lambda =   2.5000     ----->
+          Phi =   23.433      (  0.980 of starting phi)
+
+   No more lambdas: phi rising
+   Lowest phi this iteration:   23.400    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.853861E-03             a_seiche         4.235565E-03
+      q_nn            0.710239                 q_nn             0.772211    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.989544                 p1               0.987673    
+      p2               1.00530                 p2               0.950412    
+      beta            0.350000                 beta             0.350000    
+      albsw           2.053071E-03             albsw            1.026535E-02
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.187210                 om_sedimenta     0.193853    
+      sediment_ki_     50.0634                 sediment_ki_      50.0617    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  5.000     ["albsw"]
+   Maximum relative change: 0.8000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 6
+   Model calls so far             : 70
+   Starting phi for this iteration                          :   23.400    
+   Contribution to phi from observation group "temp"        :  0.29301    
+   Contribution to phi from observation group "ch4"         :   23.107    
+   All frozen parameters freed.
+       param "c10" frozen: - update vector out of bounds
+
+       Lambda =   1.2500     ----->
+          Phi =   23.340      (  0.997 of starting phi)
+
+       Lambda =  0.62500     ----->
+          Phi =   23.340      (  0.997 of starting phi)
+
+       Lambda =   2.5000     ----->
+          Phi =   23.337      (  0.997 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.337    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.873345E-03             a_seiche         3.853861E-03
+      q_nn            0.712986                 q_nn             0.710239    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.990194                 p1               0.989544    
+      p2               1.00823                 p2                1.00530    
+      beta            0.350000                 beta             0.350000    
+      albsw           6.159212E-03             albsw            2.053071E-03
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.187466                 om_sedimenta     0.187210    
+      sediment_ki_     50.0635                 sediment_ki_      50.0634    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  3.000     ["albsw"]
+   Maximum relative change:  2.000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 7
+   Model calls so far             : 89
+   Starting phi for this iteration                          :   23.337    
+   Contribution to phi from observation group "temp"        :  0.28582    
+   Contribution to phi from observation group "ch4"         :   23.051    
+   All frozen parameters freed.
+       param "c10" frozen: - update vector out of bounds
+
+       Lambda =   2.5000     ----->
+          Phi =   23.296      (  0.998 of starting phi)
+
+       Lambda =   1.2500     ----->
+          Phi =   23.296      (  0.998 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.296    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.853625E-03             a_seiche         3.873345E-03
+      q_nn            0.708435                 q_nn             0.712986    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.990266                 p1               0.990194    
+      p2               1.01410                 p2                1.00823    
+      beta            0.350000                 beta             0.350000    
+      albsw           4.927369E-03             albsw            6.159212E-03
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.187104                 om_sedimenta     0.187466    
+      sediment_ki_     50.0638                 sediment_ki_      50.0635    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  1.250     ["albsw"]
+   Maximum relative change: 0.2000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 8
+   Model calls so far             : 107
+   Starting phi for this iteration                          :   23.296    
+   Contribution to phi from observation group "temp"        :  0.28419    
+   Contribution to phi from observation group "ch4"         :   23.012    
+   All frozen parameters freed.
+       param "c10" frozen: gradient and update vectors out of bounds
+
+       Lambda =  0.62500     ----->
+          Phi =   23.276      (  0.999 of starting phi)
+
+       Lambda =  0.31250     ----->
+          Phi =   23.276      (  0.999 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.276    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.853497E-03             a_seiche         3.853625E-03
+      q_nn            0.709378                 q_nn             0.708435    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.990495                 p1               0.990266    
+      p2               1.01825                 p2                1.01410    
+      beta            0.350000                 beta             0.350000    
+      albsw           7.391054E-03             albsw            4.927369E-03
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.187620                 om_sedimenta     0.187104    
+      sediment_ki_     50.0648                 sediment_ki_      50.0638    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  1.500     ["albsw"]
+   Maximum relative change: 0.5000     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 9
+   Model calls so far             : 125
+   Starting phi for this iteration                          :   23.276    
+   Contribution to phi from observation group "temp"        :  0.27789    
+   Contribution to phi from observation group "ch4"         :   22.998    
+   All frozen parameters freed.
+       param "c10" frozen: gradient and update vectors out of bounds
+
+       Lambda =  0.15625     ----->
+          Phi =   23.143      (  0.994 of starting phi)
+
+       Lambda =  7.81250E-02 ----->
+          Phi =   23.144      (  0.994 of starting phi)
+
+       Lambda =  0.31250     ----->
+          Phi =   23.143      (  0.994 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.143    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.811701E-03             a_seiche         3.853497E-03
+      q_nn            0.704905                 q_nn             0.709378    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.993298                 p1               0.990495    
+      p2               1.05620                 p2                1.01825    
+      beta            0.350000                 beta             0.350000    
+      albsw           2.180359E-02             albsw            7.391054E-03
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.189366                 om_sedimenta     0.187620    
+      sediment_ki_     50.0768                 sediment_ki_      50.0648    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  2.950     ["albsw"]
+   Maximum relative change:  1.950     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 10
+   Model calls so far             : 144
+   Starting phi for this iteration                          :   23.143    
+   Contribution to phi from observation group "temp"        :  0.24220    
+   Contribution to phi from observation group "ch4"         :   22.900    
+   All frozen parameters freed.
+       param "c10" frozen: gradient and update vectors out of bounds
+
+       Lambda =  0.31250     ----->
+          Phi =   23.091      (  0.998 of starting phi)
+
+       Lambda =  0.15625     ----->
+          Phi =   23.091      (  0.998 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.091    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.835840E-03             a_seiche         3.811701E-03
+      q_nn            0.702681                 q_nn             0.704905    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.993667                 p1               0.993298    
+      p2               1.04361                 p2                1.05620    
+      beta            0.350000                 beta             0.350000    
+      albsw           1.755190E-02             albsw            2.180359E-02
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.188441                 om_sedimenta     0.189366    
+      sediment_ki_     50.0732                 sediment_ki_      50.0768    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  1.242     ["albsw"]
+   Maximum relative change: 0.1950     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 11
+   Model calls so far             : 162
+   Starting phi for this iteration                          :   23.091    
+   Contribution to phi from observation group "temp"        :  0.25549    
+   Contribution to phi from observation group "ch4"         :   22.836    
+   All frozen parameters freed.
+       param "c10" frozen: gradient and update vectors out of bounds
+
+       Lambda =  7.81250E-02 ----->
+          Phi =   23.159      (  1.003 times starting phi)
+
+       Lambda =  3.90625E-02 ----->
+          Phi =   23.162      (  1.003 times starting phi)
+
+       Lambda =  0.15625     ----->
+          Phi =   23.158      (  1.003 times starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.158    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.784419E-03             a_seiche         3.835840E-03
+      q_nn            0.700000                 q_nn             0.702681    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.996163                 p1               0.993667    
+      p2               1.06542                 p2                1.04361    
+      beta            0.350000                 beta             0.350000    
+      albsw           2.298248E-02             albsw            1.755190E-02
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.186845                 om_sedimenta     0.188441    
+      sediment_ki_     50.0939                 sediment_ki_      50.0732    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  1.309     ["albsw"]
+   Maximum relative change: 0.3094     ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 12
+   Model calls so far             : 181
+   Starting phi for this iteration                          :   23.158    
+   Contribution to phi from observation group "temp"        :  0.24344    
+   Contribution to phi from observation group "ch4"         :   22.915    
+   All frozen parameters freed.
+       param "q_nn" frozen: gradient and update vectors out of bounds
+       param "c10" frozen: gradient and update vectors out of bounds
+
+       Lambda =  0.15625     ----->
+          Phi =   23.263      (  1.004 times starting phi)
+
+       Lambda =  7.81250E-02 ----->
+          Phi =   23.263      (  1.005 times starting phi)
+
+       Lambda =  0.31250     ----->
+          Phi =   23.262      (  1.004 times starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.262    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.791339E-03             a_seiche         3.784419E-03
+      q_nn            0.700000                 q_nn             0.700000    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1              0.997294                 p1               0.996163    
+      p2               1.06490                 p2                1.06542    
+      beta            0.350000                 beta             0.350000    
+      albsw           2.227139E-02             albsw            2.298248E-02
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.185535                 om_sedimenta     0.186845    
+      sediment_ki_     50.0970                 sediment_ki_      50.0939    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  1.032     ["albsw"]
+   Maximum relative change: 3.0940E-02 ["albsw"]
+
+
+OPTIMISATION ITERATION NO.        : 13
+   Model calls so far             : 200
+   Starting phi for this iteration                          :   23.262    
+   Contribution to phi from observation group "temp"        :  0.24772    
+   Contribution to phi from observation group "ch4"         :   23.015    
+   All frozen parameters freed.
+       param "q_nn" frozen: gradient and update vectors out of bounds
+       param "c10" frozen: gradient and update vectors out of bounds
+
+       Lambda =  0.31250     ----->
+          Phi =   23.456      (  1.008 times starting phi)
+
+       Lambda =  0.15625     ----->
+          Phi =   23.456      (  1.008 times starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Lowest phi this iteration:   23.456    
+
+      Current parameter values                 Previous parameter values
+      lat              47.3000                 lat               47.3000    
+      p_air            960.000                 p_air             960.000    
+      a_seiche        3.883614E-03             a_seiche         3.791339E-03
+      q_nn            0.700000                 q_nn             0.700000    
+      f_wind          0.500000                 f_wind           0.500000    
+      c10             0.300000                 c10              0.300000    
+      cd              2.000000E-03             cd               2.000000E-03
+      fgeo             0.00000                 fgeo              0.00000    
+      k_min           1.000000E-30             k_min            1.000000E-30
+      p1               1.00078                 p1               0.997294    
+      p2               1.03218                 p2                1.06490    
+      beta            0.350000                 beta             0.350000    
+      albsw           1.486767E-02             albsw            2.227139E-02
+      sediment_exc    1.800000E-05             sediment_exc     1.800000E-05
+      sediment_dif    5.000000E-03             sediment_dif     5.000000E-03
+      sediment_vma     10.0000                 sediment_vma      10.0000    
+      om_sedimenta    0.181021                 om_sedimenta     0.185535    
+      sediment_ki_     50.0950                 sediment_ki_      50.0970    
+      o2_consumpti    1.000000E-02             o2_consumpti     1.000000E-02
+   Maximum   factor change:  1.498     ["albsw"]
+   Maximum relative change: 0.3324     ["albsw"]
+
+   Optimisation complete:   3 optimisation iterations have elapsed since lowest
+                          phi was achieved.
+   Total model calls:    218
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+
+Adjustable parameters ----->
+
+Parameter        Estimated         95% percent confidence limits
+                 value             lower limit       upper limit
+ a_seiche       3.835840E-03       3.097017E-03      4.574663E-03
+ q_nn           0.702681           0.590279          0.815083    
+ c10            0.300000           0.239286          0.360714    
+ p1             0.993667           0.928965           1.05837    
+ p2              1.04361           0.711037           1.37618    
+ albsw          1.755190E-02      -9.069432E-02      0.125798    
+ om_sedimenta   0.188441           -1.52727           1.90415    
+ sediment_ki_    50.0732           -392.379           492.526    
+
+Note: confidence limits provide only an indication of parameter uncertainty.
+      They rely on a linearity assumption which  may not extend as far in 
+      parameter space as the confidence limits themselves - see PEST manual.
+
+
+Fixed parameters ----->
+
+Parameter      Fixed value
+ lat             47.3000    
+ p_air           960.000    
+ f_wind         0.500000    
+ cd             2.000000E-03
+ fgeo            0.00000    
+ k_min          1.000000E-30
+ beta           0.350000    
+ sediment_exc   1.800000E-05
+ sediment_dif   5.000000E-03
+ sediment_vma    10.0000    
+ o2_consumpti   1.000000E-02
+
+See file rotsee_simstrat_ctr.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+temp0                  12.4400        13.3970      -0.957000       2.7052E-02  temp        
+temp1                  9.84000        10.3410      -0.501000       2.7052E-02  temp        
+temp2                  8.41000        8.69380      -0.283800       2.7052E-02  temp        
+temp3                  7.14000        7.34850      -0.208500       2.7052E-02  temp        
+temp4                  6.42000        6.54020      -0.120200       2.7052E-02  temp        
+temp5                  5.72000        5.81960      -9.960000E-02   2.7052E-02  temp        
+temp6                  5.47000        5.51960      -4.960000E-02   2.7052E-02  temp        
+temp7                  5.24000        5.29460      -5.460000E-02   2.7052E-02  temp        
+temp8                  5.11000        5.10690       3.100000E-03   2.7052E-02  temp        
+temp9                  4.90000        4.92170      -2.170000E-02   2.7052E-02  temp        
+temp10                 4.78000        4.81140      -3.140000E-02   2.7052E-02  temp        
+temp11                 4.77000        4.77730      -7.300000E-03   2.7052E-02  temp        
+temp12                 4.67000        4.67210      -2.100000E-03   2.7052E-02  temp        
+temp13                 4.63000        4.63950      -9.500000E-03   2.7052E-02  temp        
+temp14                 4.60000        4.61940      -1.940000E-02   2.7052E-02  temp        
+temp15                 4.62000        4.61620       3.800000E-03   2.7052E-02  temp        
+temp16                 4.62000        4.61790       2.100000E-03   2.7052E-02  temp        
+temp17                 22.2500        23.8130       -1.56300       2.7052E-02  temp        
+temp18                 22.1900        23.8170       -1.62700       2.7052E-02  temp        
+temp19                 22.1300        23.8180       -1.68800       2.7052E-02  temp        
+temp20                 22.0700        23.8160       -1.74600       2.7052E-02  temp        
+temp21                 21.5100        23.8130       -2.30300       2.7052E-02  temp        
+temp22                 20.1400        19.7190       0.421000       2.7052E-02  temp        
+temp23                 15.9900        15.1550       0.835000       2.7052E-02  temp        
+temp24                 13.2800        11.5470        1.73300       2.7052E-02  temp        
+temp25                 10.8800        9.11090        1.76910       2.7052E-02  temp        
+temp26                 9.62000        7.58400        2.03600       2.7052E-02  temp        
+temp27                 7.44000        6.60410       0.835900       2.7052E-02  temp        
+temp28                 6.50000        6.15940       0.340600       2.7052E-02  temp        
+temp29                 6.31000        5.85710       0.452900       2.7052E-02  temp        
+temp30                 5.96000        5.66760       0.292400       2.7052E-02  temp        
+temp31                 5.79000        5.57590       0.214100       2.7052E-02  temp        
+temp32                 5.79000        5.50570       0.284300       2.7052E-02  temp        
+temp33                 5.79000        5.49280       0.297200       2.7052E-02  temp        
+temp34                 22.8700        23.6830      -0.813000       2.7052E-02  temp        
+temp35                 22.6900        23.5380      -0.848000       2.7052E-02  temp        
+temp36                 22.5100        23.4750      -0.965000       2.7052E-02  temp        
+temp37                 22.0000        23.4270       -1.42700       2.7052E-02  temp        
+temp38                 21.2800        23.3950       -2.11500       2.7052E-02  temp        
+temp39                 20.3600        22.2550       -1.89500       2.7052E-02  temp        
+temp40                 19.3000        18.1770        1.12300       2.7052E-02  temp        
+temp41                 16.0200        13.6330        2.38700       2.7052E-02  temp        
+temp42                 12.7500        10.5290        2.22100       2.7052E-02  temp        
+temp43                 10.7000        8.50350        2.19650       2.7052E-02  temp        
+temp44                 8.70000        7.22180        1.47820       2.7052E-02  temp        
+temp45                 7.66000        6.53900        1.12100       2.7052E-02  temp        
+temp46                 6.62000        6.12900       0.491000       2.7052E-02  temp        
+temp47                 6.14000        5.86770       0.272300       2.7052E-02  temp        
+temp48                 6.10000        5.74090       0.359100       2.7052E-02  temp        
+temp49                 5.92000        5.64530       0.274700       2.7052E-02  temp        
+temp50                 5.92000        5.62890       0.291100       2.7052E-02  temp        
+temp51                 19.5000        20.4890      -0.989000       2.7052E-02  temp        
+temp52                 19.4700        20.4110      -0.941000       2.7052E-02  temp        
+temp53                 19.4400        20.3590      -0.919000       2.7052E-02  temp        
+temp54                 19.4100        20.3250      -0.915000       2.7052E-02  temp        
+temp55                 18.7500        20.3020       -1.55200       2.7052E-02  temp        
+temp56                 17.2000        17.0260       0.174000       2.7052E-02  temp        
+temp57                 14.1600        13.0290        1.13100       2.7052E-02  temp        
+temp58                 11.0100        10.1940       0.816000       2.7052E-02  temp        
+temp59                 9.09000        8.35580       0.734200       2.7052E-02  temp        
+temp60                 8.46000        7.26760        1.19240       2.7052E-02  temp        
+temp61                 7.49000        6.64360       0.846400       2.7052E-02  temp        
+temp62                 7.10000        6.27570       0.824300       2.7052E-02  temp        
+temp63                 6.82000        6.09990       0.720100       2.7052E-02  temp        
+temp64                 17.3500        17.9070      -0.557000       2.7052E-02  temp        
+temp65                 17.3300        17.8620      -0.532000       2.7052E-02  temp        
+temp66                 17.3200        17.8350      -0.515000       2.7052E-02  temp        
+temp67                 17.3100        17.8180      -0.508000       2.7052E-02  temp        
+temp68                 17.3000        17.8070      -0.507000       2.7052E-02  temp        
+temp69                 17.2800        17.8000      -0.520000       2.7052E-02  temp        
+temp70                 17.0400        17.7940      -0.754000       2.7052E-02  temp        
+temp71                 14.3000        14.2770       2.300000E-02   2.7052E-02  temp        
+temp72                 10.7700        11.1620      -0.392000       2.7052E-02  temp        
+temp73                 9.40000        9.04890       0.351100       2.7052E-02  temp        
+temp74                 8.11000        7.71580       0.394200       2.7052E-02  temp        
+temp75                 7.63000        6.90480       0.725200       2.7052E-02  temp        
+temp76                 7.23000        6.46150       0.768500       2.7052E-02  temp        
+temp77                 6.93000        6.28220       0.647800       2.7052E-02  temp        
+temp78                 14.5700        15.4180      -0.848000       2.7052E-02  temp        
+temp79                 14.5900        15.4470      -0.857000       2.7052E-02  temp        
+temp80                 14.5900        15.4600      -0.870000       2.7052E-02  temp        
+temp81                 14.5900        15.4700      -0.880000       2.7052E-02  temp        
+temp82                 14.5800        15.4790      -0.899000       2.7052E-02  temp        
+temp83                 14.5900        15.4860      -0.896000       2.7052E-02  temp        
+temp84                 14.5900        15.4910      -0.901000       2.7052E-02  temp        
+temp85                 14.5800        15.4950      -0.915000       2.7052E-02  temp        
+temp86                 14.3800        15.4840       -1.10400       2.7052E-02  temp        
+temp87                 11.5400        11.4160       0.124000       2.7052E-02  temp        
+temp88                 8.96000        9.10890      -0.148900       2.7052E-02  temp        
+temp89                 7.89000        7.89150      -1.500000E-03   2.7052E-02  temp        
+temp90                 7.46000        7.08590       0.374100       2.7052E-02  temp        
+temp91                 7.02000        6.63350       0.386500       2.7052E-02  temp        
+temp92                 6.72000        6.45010       0.269900       2.7052E-02  temp        
+temp93                 6.48000        6.36910       0.110900       2.7052E-02  temp        
+temp94                 6.48000        6.36230       0.117700       2.7052E-02  temp        
+temp95                 9.41000        11.7040       -2.29400       2.7052E-02  temp        
+temp96                 8.76000        8.92220      -0.162200       2.7052E-02  temp        
+temp97                 8.01000        8.76870      -0.758700       2.7052E-02  temp        
+temp98                 6.66000        8.42890       -1.76890       2.7052E-02  temp        
+temp99                 5.86000        7.52280       -1.66280       2.7052E-02  temp        
+temp100                5.40000        6.30720      -0.907200       2.7052E-02  temp        
+temp101                4.98000        5.59170      -0.611700       2.7052E-02  temp        
+temp102                4.85000        5.10390      -0.253900       2.7052E-02  temp        
+temp103                4.79000        4.76060       2.940000E-02   2.7052E-02  temp        
+temp104                4.63000        4.57950       5.050000E-02   2.7052E-02  temp        
+temp105                4.58000        4.44360       0.136400       2.7052E-02  temp        
+temp106                4.48000        4.37650       0.103500       2.7052E-02  temp        
+temp107                4.45000        4.32480       0.125200       2.7052E-02  temp        
+temp108                4.39000        4.28950       0.100500       2.7052E-02  temp        
+temp109                4.28000        4.27170       8.300000E-03   2.7052E-02  temp        
+temp110                4.25000        4.25900      -9.000000E-03   2.7052E-02  temp        
+temp111                4.25000        4.25660      -6.600000E-03   2.7052E-02  temp        
+temp112                19.2100        20.0540      -0.844000       2.7052E-02  temp        
+temp113                18.0000        19.8220       -1.82200       2.7052E-02  temp        
+temp114                16.6600        19.6690       -3.00900       2.7052E-02  temp        
+temp115                15.0300        17.7530       -2.72300       2.7052E-02  temp        
+temp116                12.1400        13.8170       -1.67700       2.7052E-02  temp        
+temp117                9.27000        10.7320       -1.46200       2.7052E-02  temp        
+temp118                7.48000        8.45540      -0.975400       2.7052E-02  temp        
+temp119                7.11000        6.93180       0.178200       2.7052E-02  temp        
+temp120                6.98000        6.05830       0.921700       2.7052E-02  temp        
+temp121                6.88000        5.51030        1.36970       2.7052E-02  temp        
+temp122                6.78000        5.25920        1.52080       2.7052E-02  temp        
+temp123                6.73000        5.07460        1.65540       2.7052E-02  temp        
+temp124                6.69000        4.95160        1.73840       2.7052E-02  temp        
+temp125                26.6200        27.5010      -0.881000       2.7052E-02  temp        
+temp126                26.3300        27.3580       -1.02800       2.7052E-02  temp        
+temp127                25.2600        27.1440       -1.88400       2.7052E-02  temp        
+temp128                22.1500        23.8150       -1.66500       2.7052E-02  temp        
+temp129                17.4100        18.2500      -0.840000       2.7052E-02  temp        
+temp130                14.1500        13.6010       0.549000       2.7052E-02  temp        
+temp131                11.3000        10.3730       0.927000       2.7052E-02  temp        
+temp132                9.60000        8.26570        1.33430       2.7052E-02  temp        
+temp133                8.08000        6.93060        1.14940       2.7052E-02  temp        
+temp134                7.78000        6.17720        1.60280       2.7052E-02  temp        
+temp135                7.17000        5.72830        1.44170       2.7052E-02  temp        
+temp136                7.35000        5.44400        1.90600       2.7052E-02  temp        
+temp137                6.92000        5.30210        1.61790       2.7052E-02  temp        
+temp138                20.4800        21.0360      -0.556000       2.7052E-02  temp        
+temp139                20.4100        20.9600      -0.550000       2.7052E-02  temp        
+temp140                20.3300        20.9140      -0.584000       2.7052E-02  temp        
+temp141                20.2700        20.8830      -0.613000       2.7052E-02  temp        
+temp142                20.2000        20.8630      -0.663000       2.7052E-02  temp        
+temp143                18.9500        20.8480       -1.89800       2.7052E-02  temp        
+temp144                16.6500        18.1330       -1.48300       2.7052E-02  temp        
+temp145                12.3400        13.4100       -1.07000       2.7052E-02  temp        
+temp146                9.81000        10.3050      -0.495000       2.7052E-02  temp        
+temp147                8.64000        8.29850       0.341500       2.7052E-02  temp        
+temp148                7.79000        7.05580       0.734200       2.7052E-02  temp        
+temp149                7.52000        6.33190        1.18810       2.7052E-02  temp        
+temp150                7.20000        5.90990        1.29010       2.7052E-02  temp        
+temp151                7.05000        5.71060        1.33940       2.7052E-02  temp        
+temp152                15.3800        15.9200      -0.540000       2.7052E-02  temp        
+temp153                15.4200        15.9340      -0.514000       2.7052E-02  temp        
+temp154                15.3900        15.9400      -0.550000       2.7052E-02  temp        
+temp155                15.3800        15.9260      -0.546000       2.7052E-02  temp        
+temp156                15.3900        15.9150      -0.525000       2.7052E-02  temp        
+temp157                15.3900        15.9080      -0.518000       2.7052E-02  temp        
+temp158                15.3800        15.9040      -0.524000       2.7052E-02  temp        
+temp159                15.3700        15.9020      -0.532000       2.7052E-02  temp        
+temp160                13.3400        14.8510       -1.51100       2.7052E-02  temp        
+temp161                11.3100        11.1740       0.136000       2.7052E-02  temp        
+temp162                9.28000        8.86940       0.410600       2.7052E-02  temp        
+temp163                7.89000        7.42360       0.466400       2.7052E-02  temp        
+temp164                7.85000        6.58710        1.26290       2.7052E-02  temp        
+temp165                7.40000        6.11990        1.28010       2.7052E-02  temp        
+temp166                7.25000        5.90370        1.34630       2.7052E-02  temp        
+temp167                7.17000        5.75270        1.41730       2.7052E-02  temp        
+temp168                7.17000        5.73190        1.43810       2.7052E-02  temp        
+temp169                5.12000        5.05560       6.440000E-02   2.7052E-02  temp        
+temp170                5.10000        5.09980       2.000000E-04   2.7052E-02  temp        
+temp171                5.06000        5.11020      -5.020000E-02   2.7052E-02  temp        
+temp172                4.99000        5.11300      -0.123000       2.7052E-02  temp        
+temp173                4.97000        5.10490      -0.134900       2.7052E-02  temp        
+temp174                4.98000        5.01910      -3.910000E-02   2.7052E-02  temp        
+temp175                4.97000        4.96340       6.600000E-03   2.7052E-02  temp        
+temp176                4.95000        4.91570       3.430000E-02   2.7052E-02  temp        
+temp177                4.95000        4.86560       8.440000E-02   2.7052E-02  temp        
+temp178                4.93000        4.82860       0.101400       2.7052E-02  temp        
+temp179                4.93000        4.80020       0.129800       2.7052E-02  temp        
+temp180                4.93000        4.78600       0.144000       2.7052E-02  temp        
+temp181                4.96000        4.77680       0.183200       2.7052E-02  temp        
+temp182                4.98000        4.77100       0.209000       2.7052E-02  temp        
+temp183                4.98000        4.76750       0.212500       2.7052E-02  temp        
+temp184                4.98000        4.76540       0.214600       2.7052E-02  temp        
+temp185                4.98000        4.76450       0.215500       2.7052E-02  temp        
+temp186                16.9900        18.3550       -1.36500       2.7052E-02  temp        
+temp187                15.9800        17.9170       -1.93700       2.7052E-02  temp        
+temp188                14.8300        16.1960       -1.36600       2.7052E-02  temp        
+temp189                12.4400        14.9690       -2.52900       2.7052E-02  temp        
+temp190                11.1600        12.2220       -1.06200       2.7052E-02  temp        
+temp191                9.49000        9.52190      -3.190000E-02   2.7052E-02  temp        
+temp192                7.36000        7.88000      -0.520000       2.7052E-02  temp        
+temp193                6.90000        6.77390       0.126100       2.7052E-02  temp        
+temp194                6.87000        6.19170       0.678300       2.7052E-02  temp        
+temp195                6.26000        5.77140       0.488600       2.7052E-02  temp        
+temp196                6.35000        5.57560       0.774400       2.7052E-02  temp        
+temp197                6.11000        5.43360       0.676400       2.7052E-02  temp        
+temp198                6.35000        5.34000        1.01000       2.7052E-02  temp        
+temp199                6.06000        5.29380       0.766200       2.7052E-02  temp        
+temp200                13.9900        16.2010       -2.21100       2.7052E-02  temp        
+temp201                12.4200        16.1140       -3.69400       2.7052E-02  temp        
+temp202                11.5300        13.1150       -1.58500       2.7052E-02  temp        
+temp203                9.73000        10.1980      -0.468000       2.7052E-02  temp        
+temp204                7.58000        8.29970      -0.719700       2.7052E-02  temp        
+temp205                6.80000        7.03650      -0.236500       2.7052E-02  temp        
+temp206                6.50000        6.35530       0.144700       2.7052E-02  temp        
+temp207                6.26000        5.88140       0.378600       2.7052E-02  temp        
+temp208                6.17000        5.66360       0.506400       2.7052E-02  temp        
+temp209                6.14000        5.50590       0.634100       2.7052E-02  temp        
+temp210                6.07000        5.40180       0.668200       2.7052E-02  temp        
+temp211                5.96000        5.35080       0.609200       2.7052E-02  temp        
+temp212                18.7200        20.4950       -1.77500       2.7052E-02  temp        
+temp213                17.6400        20.3860       -2.74600       2.7052E-02  temp        
+temp214                16.0600        17.5270       -1.46700       2.7052E-02  temp        
+temp215                12.5200        13.3640      -0.844000       2.7052E-02  temp        
+temp216                9.22000        10.3940       -1.17400       2.7052E-02  temp        
+temp217                7.63000        8.44400      -0.814000       2.7052E-02  temp        
+temp218                6.88000        7.21340      -0.333400       2.7052E-02  temp        
+temp219                6.51000        6.42770       8.230000E-02   2.7052E-02  temp        
+temp220                6.37000        6.03250       0.337500       2.7052E-02  temp        
+temp221                6.30000        5.77710       0.522900       2.7052E-02  temp        
+temp222                6.21000        5.61130       0.598700       2.7052E-02  temp        
+temp223                6.14000        5.52930       0.610700       2.7052E-02  temp        
+temp224                23.6900        24.2390      -0.549000       2.7052E-02  temp        
+temp225                23.1000        24.0140      -0.914000       2.7052E-02  temp        
+temp226                22.2400        23.8170       -1.57700       2.7052E-02  temp        
+temp227                21.3200        23.3790       -2.05900       2.7052E-02  temp        
+temp228                20.3400        22.2460       -1.90600       2.7052E-02  temp        
+temp229                15.9500        16.6960      -0.746000       2.7052E-02  temp        
+temp230                12.0400        12.6780      -0.638000       2.7052E-02  temp        
+temp231                9.11000        9.95430      -0.844300       2.7052E-02  temp        
+temp232                7.36000        8.19660      -0.836600       2.7052E-02  temp        
+temp233                7.09000        7.09280      -2.800000E-03   2.7052E-02  temp        
+temp234                6.66000        6.42910       0.230900       2.7052E-02  temp        
+temp235                6.44000        6.03710       0.402900       2.7052E-02  temp        
+temp236                6.35000        5.79650       0.553500       2.7052E-02  temp        
+temp237                6.28000        5.67750       0.602500       2.7052E-02  temp        
+temp238                18.4000        19.3560      -0.956000       2.7052E-02  temp        
+temp239                18.4500        19.2620      -0.812000       2.7052E-02  temp        
+temp240                18.4400        19.2010      -0.761000       2.7052E-02  temp        
+temp241                18.4400        19.1620      -0.722000       2.7052E-02  temp        
+temp242                18.4100        19.1370      -0.727000       2.7052E-02  temp        
+temp243                18.4300        19.1210      -0.691000       2.7052E-02  temp        
+temp244                15.0100        19.0150       -4.00500       2.7052E-02  temp        
+temp245                11.5600        13.9850       -2.42500       2.7052E-02  temp        
+temp246                9.47000        10.9090       -1.43900       2.7052E-02  temp        
+temp247                7.98000        8.90550      -0.925500       2.7052E-02  temp        
+temp248                6.99000        7.62610      -0.636100       2.7052E-02  temp        
+temp249                6.79000        6.80990      -1.990000E-02   2.7052E-02  temp        
+temp250                6.62000        6.31880       0.301200       2.7052E-02  temp        
+temp251                6.45000        6.09770       0.352300       2.7052E-02  temp        
+temp252                14.3800        15.2790      -0.899000       2.7052E-02  temp        
+temp253                14.3900        15.2490      -0.859000       2.7052E-02  temp        
+temp254                14.3800        15.2300      -0.850000       2.7052E-02  temp        
+temp255                14.4000        15.2180      -0.818000       2.7052E-02  temp        
+temp256                14.4000        15.2110      -0.811000       2.7052E-02  temp        
+temp257                14.3900        15.2060      -0.816000       2.7052E-02  temp        
+temp258                12.2000        15.2010       -3.00100       2.7052E-02  temp        
+temp259                9.22000        11.1710       -1.95100       2.7052E-02  temp        
+temp260                7.99000        9.05920       -1.06920       2.7052E-02  temp        
+temp261                7.15000        7.72700      -0.577000       2.7052E-02  temp        
+temp262                6.88000        6.90890      -2.890000E-02   2.7052E-02  temp        
+temp263                6.68000        6.41350       0.266500       2.7052E-02  temp        
+temp264                6.55000        6.18540       0.364600       2.7052E-02  temp        
+temp265                13.1100        13.5330      -0.423000       2.7052E-02  temp        
+temp266                13.1100        13.5420      -0.432000       2.7052E-02  temp        
+temp267                13.1000        13.5410      -0.441000       2.7052E-02  temp        
+temp268                13.1100        13.5390      -0.429000       2.7052E-02  temp        
+temp269                13.1100        13.5370      -0.427000       2.7052E-02  temp        
+temp270                13.1000        13.5350      -0.435000       2.7052E-02  temp        
+temp271                13.0900        13.5340      -0.444000       2.7052E-02  temp        
+temp272                13.0500        13.5240      -0.474000       2.7052E-02  temp        
+temp273                12.6700        13.5050      -0.835000       2.7052E-02  temp        
+temp274                10.1300        11.7170       -1.58700       2.7052E-02  temp        
+temp275                8.06000        9.27890       -1.21890       2.7052E-02  temp        
+temp276                7.39000        7.87300      -0.483000       2.7052E-02  temp        
+temp277                7.02000        6.99310       2.690000E-02   2.7052E-02  temp        
+temp278                6.79000        6.48780       0.302200       2.7052E-02  temp        
+temp279                6.60000        6.25510       0.344900       2.7052E-02  temp        
+temp280                6.60000        6.09900       0.501000       2.7052E-02  temp        
+temp281                6.60000        6.07950       0.520500       2.7052E-02  temp        
+temp282                13.0400        13.5330      -0.493000       2.7052E-02  temp        
+temp283                13.0400        13.4800      -0.440000       2.7052E-02  temp        
+temp284                13.0300        13.4460      -0.416000       2.7052E-02  temp        
+temp285                13.0300        13.4250      -0.395000       2.7052E-02  temp        
+temp286                13.0300        13.4120      -0.382000       2.7052E-02  temp        
+temp287                13.0100        13.4040      -0.394000       2.7052E-02  temp        
+temp288                13.0000        13.3990      -0.399000       2.7052E-02  temp        
+temp289                12.6200        13.3950      -0.775000       2.7052E-02  temp        
+temp290                10.1000        11.7500       -1.65000       2.7052E-02  temp        
+temp291                8.07000        9.29770       -1.22770       2.7052E-02  temp        
+temp292                7.40000        7.88550      -0.485500       2.7052E-02  temp        
+temp293                7.07000        7.00090       6.910000E-02   2.7052E-02  temp        
+temp294                6.79000        6.49430       0.295700       2.7052E-02  temp        
+temp295                6.55000        6.26130       0.288700       2.7052E-02  temp        
+temp296                10.7000        10.8910      -0.191000       2.7052E-02  temp        
+temp297                10.7100        10.8710      -0.161000       2.7052E-02  temp        
+temp298                10.7100        10.8600      -0.150000       2.7052E-02  temp        
+temp299                10.7100        10.8540      -0.144000       2.7052E-02  temp        
+temp300                10.7100        10.8500      -0.140000       2.7052E-02  temp        
+temp301                10.7000        10.8490      -0.149000       2.7052E-02  temp        
+temp302                10.7000        10.8480      -0.148000       2.7052E-02  temp        
+temp303                10.7000        10.8480      -0.148000       2.7052E-02  temp        
+temp304                10.6900        10.8480      -0.158000       2.7052E-02  temp        
+temp305                8.37000        9.55500       -1.18500       2.7052E-02  temp        
+temp306                7.33000        8.03930      -0.709300       2.7052E-02  temp        
+temp307                7.02000        7.12640      -0.106400       2.7052E-02  temp        
+temp308                6.83000        6.59910       0.230900       2.7052E-02  temp        
+temp309                6.54000        6.36100       0.179000       2.7052E-02  temp        
+temp310                8.87000        9.03960      -0.169600       2.7052E-02  temp        
+temp311                8.87000        9.02890      -0.158900       2.7052E-02  temp        
+temp312                8.88000        9.02200      -0.142000       2.7052E-02  temp        
+temp313                8.87000        9.01170      -0.141700       2.7052E-02  temp        
+temp314                8.86000        8.98490      -0.124900       2.7052E-02  temp        
+temp315                8.87000        8.97370      -0.103700       2.7052E-02  temp        
+temp316                8.87000        8.96700      -9.700000E-02   2.7052E-02  temp        
+temp317                8.86000        8.96300      -0.103000       2.7052E-02  temp        
+temp318                8.85000        8.96070      -0.110700       2.7052E-02  temp        
+temp319                8.85000        8.94390      -9.390000E-02   2.7052E-02  temp        
+temp320                7.72000        8.31210      -0.592100       2.7052E-02  temp        
+temp321                7.11000        7.45730      -0.347300       2.7052E-02  temp        
+temp322                6.83000        6.93240      -0.102400       2.7052E-02  temp        
+temp323                6.59000        6.69180      -0.101800       2.7052E-02  temp        
+temp324                6.48000        6.55140      -7.140000E-02   2.7052E-02  temp        
+temp325                6.96000        6.83860       0.121400       2.7052E-02  temp        
+temp326                6.96000        6.84140       0.118600       2.7052E-02  temp        
+temp327                6.96000        6.84390       0.116100       2.7052E-02  temp        
+temp328                6.96000        6.84710       0.112900       2.7052E-02  temp        
+temp329                6.96000        6.85120       0.108800       2.7052E-02  temp        
+temp330                6.96000        6.85620       0.103800       2.7052E-02  temp        
+temp331                6.96000        6.86180       9.820000E-02   2.7052E-02  temp        
+temp332                6.96000        6.86790       9.210000E-02   2.7052E-02  temp        
+temp333                6.96000        6.87470       8.530000E-02   2.7052E-02  temp        
+temp334                6.96000        6.88180       7.820000E-02   2.7052E-02  temp        
+temp335                6.96000        6.88980       7.020000E-02   2.7052E-02  temp        
+temp336                6.93000        7.06950      -0.139500       2.7052E-02  temp        
+temp337                6.86000        7.14750      -0.287500       2.7052E-02  temp        
+temp338                6.61000        6.98330      -0.373300       2.7052E-02  temp        
+temp339                6.07000        5.77450       0.295500       2.7052E-02  temp        
+temp340                6.07000        5.73920       0.330800       2.7052E-02  temp        
+temp341                6.06000        5.72100       0.339000       2.7052E-02  temp        
+temp342                6.06000        5.71310       0.346900       2.7052E-02  temp        
+temp343                6.05000        5.71080       0.339200       2.7052E-02  temp        
+temp344                6.05000        5.71140       0.338600       2.7052E-02  temp        
+temp345                6.05000        5.71400       0.336000       2.7052E-02  temp        
+temp346                6.05000        5.71830       0.331700       2.7052E-02  temp        
+temp347                6.04000        5.72440       0.315600       2.7052E-02  temp        
+temp348                6.04000        5.73240       0.307600       2.7052E-02  temp        
+temp349                6.04000        5.74360       0.296400       2.7052E-02  temp        
+temp350                5.98000        5.81890       0.161100       2.7052E-02  temp        
+temp351                6.38000        6.31960       6.040000E-02   2.7052E-02  temp        
+temp352                6.61000        6.69570      -8.570000E-02   2.7052E-02  temp        
+temp353                6.51000        6.85910      -0.349100       2.7052E-02  temp        
+temp354                1.37000       0.695880       0.674120       2.7052E-02  temp        
+temp355                1.40000        2.39360      -0.993600       2.7052E-02  temp        
+temp356                1.45000        3.04820       -1.59820       2.7052E-02  temp        
+temp357                1.84000        3.34710       -1.50710       2.7052E-02  temp        
+temp358                2.01000        3.49480       -1.48480       2.7052E-02  temp        
+temp359                2.05000        3.57740       -1.52740       2.7052E-02  temp        
+temp360                2.31000        3.63130       -1.32130       2.7052E-02  temp        
+temp361                2.38000        3.66330       -1.28330       2.7052E-02  temp        
+temp362                2.52000        3.67880       -1.15880       2.7052E-02  temp        
+temp363                2.67000        3.68860       -1.01860       2.7052E-02  temp        
+temp364                2.75000        3.69360      -0.943600       2.7052E-02  temp        
+temp365                2.89000        3.69690      -0.806900       2.7052E-02  temp        
+temp366                2.99000        3.69870      -0.708700       2.7052E-02  temp        
+temp367                3.16000        3.69940      -0.539400       2.7052E-02  temp        
+ch40                   1.10000        4.56324       -3.46324       4.7445E-03  ch4         
+ch41                   1.41000        15.3754       -13.9654       4.7445E-03  ch4         
+ch42                  0.540000        73.4129       -72.8729       4.7445E-03  ch4         
+ch43                  7.000000E-02    81.9601       -81.8901       4.7445E-03  ch4         
+ch44                  0.440000        94.8808       -94.4408       4.7445E-03  ch4         
+ch45                  0.190000        125.065       -124.875       4.7445E-03  ch4         
+ch46                  0.680000        142.293       -141.613       4.7445E-03  ch4         
+ch47                   20.2300        168.210       -147.980       4.7445E-03  ch4         
+ch48                   18.1900        187.730       -169.540       4.7445E-03  ch4         
+ch49                   1.95000        2.78607      -0.836070       4.7445E-03  ch4         
+ch410                  2.77000        4.24857       -1.47857       4.7445E-03  ch4         
+ch411                 0.260000        60.2457       -59.9857       4.7445E-03  ch4         
+ch412                 1.000000E-02    83.5148       -83.5048       4.7445E-03  ch4         
+ch413                  11.6100        88.6055       -76.9955       4.7445E-03  ch4         
+ch414                  37.2300        91.9644       -54.7344       4.7445E-03  ch4         
+ch415                  42.2800        96.8220       -54.5420       4.7445E-03  ch4         
+ch416                  61.2700        108.392       -47.1218       4.7445E-03  ch4         
+ch417                  123.840        162.522       -38.6824       4.7445E-03  ch4         
+ch418                  444.630        336.436        108.194       4.7445E-03  ch4         
+ch419                  612.760        524.318        88.4420       4.7445E-03  ch4         
+ch420                 0.310000        5.14877       -4.83877       4.7445E-03  ch4         
+ch421                 0.280000        5.23885       -4.95885       4.7445E-03  ch4         
+ch422                 0.340000        5.29875       -4.95875       4.7445E-03  ch4         
+ch423                 0.230000        5.33823       -5.10823       4.7445E-03  ch4         
+ch424                 0.260000        5.40281       -5.14281       4.7445E-03  ch4         
+ch425                 9.000000E-02    61.4206       -61.3306       4.7445E-03  ch4         
+ch426                  24.3300        80.1968       -55.8668       4.7445E-03  ch4         
+ch427                  72.6300        89.2840       -16.6540       4.7445E-03  ch4         
+ch428                  87.3800        96.2396       -8.85962       4.7445E-03  ch4         
+ch429                  207.070        112.576        94.4939       4.7445E-03  ch4         
+ch430                  237.020        142.720        94.3001       4.7445E-03  ch4         
+ch431                  395.760        218.043        177.717       4.7445E-03  ch4         
+ch432                  594.880        416.916        177.964       4.7445E-03  ch4         
+ch433                  1404.09        1283.85        120.241       4.7445E-03  ch4         
+ch434                 0.630000        8.91138       -8.28138       4.7445E-03  ch4         
+ch435                 0.630000        9.07283       -8.44283       4.7445E-03  ch4         
+ch436                 0.680000        9.24538       -8.56538       4.7445E-03  ch4         
+ch437                  5.67000        9.32139       -3.65139       4.7445E-03  ch4         
+ch438                  60.5900        9.84594        50.7441       4.7445E-03  ch4         
+ch439                  99.7600        86.1791        13.5809       4.7445E-03  ch4         
+ch440                  155.480        97.2321        58.2479       4.7445E-03  ch4         
+ch441                  166.570        118.246        48.3240       4.7445E-03  ch4         
+ch442                  442.200        164.744        277.456       4.7445E-03  ch4         
+ch443                  440.030        280.036        159.994       4.7445E-03  ch4         
+ch444                  1014.24        1144.56       -130.317       4.7445E-03  ch4         
+ch445                 7.000000E-02    8.89100       -8.82100       4.7445E-03  ch4         
+ch446                 7.000000E-02    9.08973       -9.01973       4.7445E-03  ch4         
+ch447                 0.180000        9.17803       -8.99803       4.7445E-03  ch4         
+ch448                 0.220000        9.24148       -9.02148       4.7445E-03  ch4         
+ch449                  4.96000        9.35517       -4.39516       4.7445E-03  ch4         
+ch450                  80.5600        10.0198        70.5402       4.7445E-03  ch4         
+ch451                  146.670        71.4149        75.2551       4.7445E-03  ch4         
+ch452                  184.910        103.175        81.7354       4.7445E-03  ch4         
+ch453                  230.500        118.106        112.394       4.7445E-03  ch4         
+ch454                  350.280        164.021        186.259       4.7445E-03  ch4         
+ch455                  503.710        296.345        207.365       4.7445E-03  ch4         
+ch456                  1199.88        1095.25        104.626       4.7445E-03  ch4         
+ch457                  1.39000        11.8543       -10.4643       4.7445E-03  ch4         
+ch458                  1.26000        11.9913       -10.7313       4.7445E-03  ch4         
+ch459                 0.960000        12.1242       -11.1642       4.7445E-03  ch4         
+ch460                  1.00000        12.2891       -11.2891       4.7445E-03  ch4         
+ch461                  1.05000        12.4985       -11.4485       4.7445E-03  ch4         
+ch462                  2.46000        12.6703       -10.2103       4.7445E-03  ch4         
+ch463                  202.740        12.8767        189.863       4.7445E-03  ch4         
+ch464                  215.460        99.1833        116.277       4.7445E-03  ch4         
+ch465                  338.280        182.516        155.764       4.7445E-03  ch4         
+ch466                  634.180        348.982        285.198       4.7445E-03  ch4         
+ch467                  1095.10        1283.60       -188.499       4.7445E-03  ch4         
+ch468                 0.130000        15.8850       -15.7550       4.7445E-03  ch4         
+ch469                 0.140000        16.0423       -15.9023       4.7445E-03  ch4         
+ch470                 6.000000E-02    16.8504       -16.7904       4.7445E-03  ch4         
+ch471                  10.7000        25.2462       -14.5462       4.7445E-03  ch4         
+ch472                  481.000        244.312        236.688       4.7445E-03  ch4         
+ch473                  640.130        553.259        86.8707       4.7445E-03  ch4         
+ch474                  792.230        962.938       -170.708       4.7445E-03  ch4         
+ch475                  1416.92        1390.30        26.6152       4.7445E-03  ch4         
+ch476                 0.440000        44.9083       -44.4683       4.7445E-03  ch4         
+ch477                 0.710000        45.2147       -44.5047       4.7445E-03  ch4         
+ch478                 0.690000        45.7453       -45.0553       4.7445E-03  ch4         
+ch479                 0.540000        46.5420       -46.0020       4.7445E-03  ch4         
+ch480                 0.880000        47.8192       -46.9392       4.7445E-03  ch4         
+ch481                 0.480000        50.3226       -49.8426       4.7445E-03  ch4         
+ch482                  80.0100        254.043       -174.033       4.7445E-03  ch4         
+ch483                  695.700        1000.36       -304.664       4.7445E-03  ch4         
+ch484                  1349.96        1379.52       -29.5633       4.7445E-03  ch4         
+ch485                  1977.73        1725.98        251.754       4.7445E-03  ch4         
+ch486                 0.330000        78.6767       -78.3467       4.7445E-03  ch4         
+ch487                  17.9100        139.243       -121.333       4.7445E-03  ch4         
+ch488                  590.950        534.198        56.7523       4.7445E-03  ch4         
+ch489                  1031.00        997.183        33.8175       4.7445E-03  ch4         
+
+See file rotsee_simstrat_ctr.res for more details of residuals in graph-ready format.
+
+See file rotsee_simstrat_ctr.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =   23.091    
+  Contribution to phi from observation group "temp"         =  0.25549    
+  Contribution to phi from observation group "ch4"          =   22.836    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =  0.96948    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =   458
+     Mean value of non-zero weighted residuals                      =  1.2051E-03
+     Maximum weighted residual [observation "ch466"]                =   1.353    
+     Minimum weighted residual [observation "ch483"]                =  -1.445    
+     Standard variance of weighted residuals                        =  5.1313E-02
+     Standard error of weighted residuals                           =  0.2265    
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "temp":-
+     Number of residuals with non-zero weight                       =   368
+     Mean value of non-zero weighted residuals                      = -6.7444E-03
+     Maximum weighted residual [observation "temp41"]               =  6.4574E-02
+     Minimum weighted residual [observation "temp244"]              = -0.1083    
+     "Variance" of weighted residuals                               =  6.9426E-04
+     "Standard error" of weighted residuals                         =  2.6349E-02
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "ch4":-
+     Number of residuals with non-zero weight                       =    90
+     Mean value of non-zero weighted residuals                      =  3.3710E-02
+     Maximum weighted residual [observation "ch466"]                =   1.353    
+     Minimum weighted residual [observation "ch483"]                =  -1.445    
+     "Variance" of weighted residuals                               =  0.2537    
+     "Standard error" of weighted residuals                         =  0.5037    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+
+K-L information statistics ----->
+
+
+  AIC   =  -1350.241    
+  AICC  =  -1349.839    
+  BIC   =  -1313.099    
+  KIC   =  -1321.472    
+
+Parameter covariance matrix ----->
+
+               a_seiche       q_nn         c10           p1           p2         albsw     om_sedimenta sediment_ki_
+a_seiche       1.4209E-07   6.2324E-06  -6.8363E-06   2.1997E-06  -2.3749E-06   2.2471E-06  -6.4550E-05   1.6564E-02
+q_nn           6.2324E-06   3.2888E-03   5.8708E-04   2.5037E-05  -2.3426E-04   1.3044E-03   9.1704E-04  -0.1477    
+c10           -6.8363E-06   5.8708E-04   9.5955E-04  -6.6673E-04  -3.0576E-03  -4.9343E-04   1.8483E-02   -4.728    
+p1             2.1997E-06   2.5037E-05  -6.6673E-04   1.0897E-03   5.2296E-03   1.4184E-03  -2.8852E-02    7.441    
+p2            -2.3749E-06  -2.3426E-04  -3.0576E-03   5.2296E-03   2.8791E-02   7.3228E-03  -0.1382        35.63    
+albsw          2.2471E-06   1.3044E-03  -4.9343E-04   1.4184E-03   7.3228E-03   3.0501E-03  -3.6827E-02    9.582    
+om_sedimenta  -6.4550E-05   9.1704E-04   1.8483E-02  -2.8852E-02  -0.1382      -3.6827E-02   0.7663       -197.6    
+sediment_ki_   1.6564E-02  -0.1477       -4.728        7.441        35.63        9.582       -197.6       5.0959E+04
+
+
+Parameter correlation coefficient matrix ----->
+
+               a_seiche       q_nn         c10           p1           p2         albsw     om_sedimenta sediment_ki_
+a_seiche        1.000       0.2883      -0.5855       0.1768      -3.7130E-02   0.1079      -0.1956       0.1947    
+q_nn           0.2883        1.000       0.3305       1.3225E-02  -2.4075E-02   0.4118       1.8268E-02  -1.1406E-02
+c10           -0.5855       0.3305        1.000      -0.6520      -0.5817      -0.2884       0.6816      -0.6762    
+p1             0.1768       1.3225E-02  -0.6520        1.000       0.9336       0.7780      -0.9984       0.9986    
+p2            -3.7130E-02  -2.4075E-02  -0.5817       0.9336        1.000       0.7814      -0.9301       0.9303    
+albsw          0.1079       0.4118      -0.2884       0.7780       0.7814        1.000      -0.7618       0.7685    
+om_sedimenta  -0.1956       1.8268E-02   0.6816      -0.9984      -0.9301      -0.7618        1.000      -0.9999    
+sediment_ki_   0.1947      -1.1406E-02  -0.6762       0.9986       0.9303       0.7685      -0.9999        1.000    
+
+
+Normalized eigenvectors of parameter covariance matrix ----->
+
+              Vector_1     Vector_2     Vector_3     Vector_4     Vector_5     Vector_6     Vector_7     Vector_8   
+a_seiche      -0.9996       2.2538E-02   6.8994E-03   1.2750E-02   5.6843E-03   3.7172E-03  -1.2495E-03  -3.2505E-07
+q_nn           3.8855E-03  -5.5428E-03   4.0816E-02  -2.5903E-02   0.4737       0.5872       0.6545       2.8976E-06
+c10           -1.5928E-02  -6.8029E-02  -0.1211      -0.8957      -0.3732       5.9944E-02   0.1880       9.2786E-05
+p1             1.9721E-02   0.9699      -0.2388      -4.1682E-02   7.2005E-03   2.6717E-03   1.3727E-02  -1.4602E-04
+p2            -2.3492E-03   5.2584E-03   5.3634E-02  -1.5467E-02   0.1819      -0.7943       0.5770      -6.9923E-04
+albsw         -1.5328E-03  -4.9386E-02  -0.2728       0.4415      -0.7197       0.1277       0.4404      -1.8802E-04
+om_sedimenta   1.0011E-02   0.2275       0.9216       4.1667E-03  -0.2918       6.6565E-02   9.6023E-02   3.8774E-03
+sediment_ki_   3.6727E-05   7.3971E-04   3.6109E-03  -1.3314E-04  -1.1575E-03   7.9633E-04  -9.6587E-05   -1.000    
+
+
+Eigenvalues ----->
+
+               1.2808E-09   5.4638E-07   2.0541E-05   3.4717E-04   5.5104E-04   3.8532E-03   4.2852E-03   5.0960E+04

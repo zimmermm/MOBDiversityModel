@@ -1,0 +1,204 @@
+                 PARAMETER SENSITIVITIES: CASE rotsee_simstrat_ctr
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             1.896583E-03      123.398    
+   q_nn            fit             0.822603         0.212315    
+   c10             fit             0.409504          1.44651    
+   p1              fit             0.984071          1.05428    
+   p2              fit              1.10000         8.327529E-02
+   albsw           fit             0.106931         5.772499E-02
+   om_sedimenta    fit             0.219691         0.406343    
+   sediment_ki_    fit              49.9443         1.020377E-03
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.077227E-03      70.3734    
+   q_nn            fit             0.843836         0.171832    
+   c10             fit             0.331122          1.06104    
+   p1              fit             0.975416          1.20533    
+   p2              fit             0.900000         0.129613    
+   albsw           fit             2.138615E-02     0.128563    
+   om_sedimenta    fit             0.197707         0.436592    
+   sediment_ki_    fit              49.9681         9.953963E-04
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             4.462447E-03      10.8476    
+   q_nn            fit             0.808061         4.601290E-02
+   c10             fit             0.300000         0.221208    
+   p1              fit             0.980230         0.262001    
+   p2              fit             0.900000         8.848244E-02
+   albsw           fit             4.277230E-03     4.979444E-02
+   om_sedimenta    fit             0.187232         0.226820    
+   sediment_ki_    fit              50.0673         8.002561E-04
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             4.307583E-03      11.7406    
+   q_nn            fit             0.784518         5.037234E-02
+   c10             fit             0.300000         0.235478    
+   p1              fit             0.987274         0.664374    
+   p2              fit             0.941801         4.101393E-02
+   albsw           fit             1.283169E-02     4.963325E-02
+   om_sedimenta    fit             0.195193         0.229361    
+   sediment_ki_    fit              50.0615         8.428560E-04
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             4.235565E-03      11.9991    
+   q_nn            fit             0.772211         5.087293E-02
+   c10             fit             0.300000         0.235077    
+   p1              fit             0.987673         0.681567    
+   p2              fit             0.950412         3.777032E-02
+   albsw           fit             1.026535E-02     4.952512E-02
+   om_sedimenta    fit             0.193853         0.230212    
+   sediment_ki_    fit              50.0617         8.400317E-04
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.853861E-03      13.4020    
+   q_nn            fit             0.710239         0.126009    
+   c10             fit             0.300000         0.233833    
+   p1              fit             0.989544         0.764585    
+   p2              fit              1.00530         3.600767E-02
+   albsw           fit             2.053071E-03     4.871767E-02
+   om_sedimenta    fit             0.187210         0.234203    
+   sediment_ki_    fit              50.0634         8.239686E-04
+
+
+ OPTIMISATION ITERATION NO.  7 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.873345E-03      13.1838    
+   q_nn            fit             0.712986         9.161174E-02
+   c10             fit             0.300000         0.233219    
+   p1              fit             0.990194         0.750853    
+   p2              fit              1.00823         4.032161E-02
+   albsw           fit             6.159212E-03     4.796239E-02
+   om_sedimenta    fit             0.187466         0.233407    
+   sediment_ki_    fit              50.0635         8.216985E-04
+
+
+ OPTIMISATION ITERATION NO.  8 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.853625E-03      13.2405    
+   q_nn            fit             0.708435         6.767811E-02
+   c10             fit             0.300000         0.234043    
+   p1              fit             0.990266         0.734334    
+   p2              fit              1.01410         4.095791E-02
+   albsw           fit             4.927369E-03     4.726243E-02
+   om_sedimenta    fit             0.187104         0.233170    
+   sediment_ki_    fit              50.0638         8.189019E-04
+
+
+ OPTIMISATION ITERATION NO.  9 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.853497E-03      13.6616    
+   q_nn            fit             0.709378         6.363115E-02
+   c10             fit             0.300000         0.244054    
+   p1              fit             0.990495         0.730470    
+   p2              fit              1.01825         4.116671E-02
+   albsw           fit             7.391054E-03     4.762576E-02
+   om_sedimenta    fit             0.187620         0.232340    
+   sediment_ki_    fit              50.0648         8.179360E-04
+
+
+ OPTIMISATION ITERATION NO. 10 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.811701E-03      13.8150    
+   q_nn            fit             0.704905         5.534906E-02
+   c10             fit             0.300000         0.226565    
+   p1              fit             0.993298         0.704337    
+   p2              fit              1.05620         3.427219E-02
+   albsw           fit             2.180359E-02     5.297308E-02
+   om_sedimenta    fit             0.189366         0.229054    
+   sediment_ki_    fit              50.0768         8.115120E-04
+
+
+ OPTIMISATION ITERATION NO. 11 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.835840E-03      13.7536    
+   q_nn            fit             0.702681         5.540690E-02
+   c10             fit             0.300000         0.226593    
+   p1              fit             0.993667         0.713339    
+   p2              fit              1.04361         4.152551E-02
+   albsw           fit             1.755190E-02     3.381278E-02
+   om_sedimenta    fit             0.188441         0.230701    
+   sediment_ki_    fit              50.0732         8.137086E-04
+
+
+ OPTIMISATION ITERATION NO. 12 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.784419E-03      14.3128    
+   q_nn            fit             0.700000         7.698409E-02
+   c10             fit             0.300000         0.239187    
+   p1              fit             0.996163         0.794092    
+   p2              fit              1.06542         3.874564E-02
+   albsw           fit             2.298248E-02     3.076488E-02
+   om_sedimenta    fit             0.186845         0.231749    
+   sediment_ki_    fit              50.0939         8.097786E-04
+
+
+ OPTIMISATION ITERATION NO. 13 ----->
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.791339E-03      14.1932    
+   q_nn            fit             0.700000         0.156305    
+   c10             fit             0.300000         0.224075    
+   p1              fit             0.997294         0.810131    
+   p2              fit              1.06490         3.508341E-02
+   albsw           fit             2.227139E-02     4.412876E-02
+   om_sedimenta    fit             0.185535         0.232470    
+   sediment_ki_    fit              50.0970         8.070499E-04
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "temp" ----->
+
+ Number of observations with non-zero weight =   368
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.835840E-03     0.155506    
+   q_nn            fit             0.702681         1.021171E-03
+   c10             fit             0.300000         2.726629E-03
+   p1              fit             0.993667         1.807284E-02
+   p2              fit              1.04361         2.856113E-03
+   albsw           fit             1.755190E-02     7.773290E-03
+   om_sedimenta    fit             0.188441          0.00000    
+   sediment_ki_    fit              50.0732         5.177669E-22
+
+
+
+ Composite sensitivities for observation group "ch4" ----->
+
+ Number of observations with non-zero weight =    90
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.835840E-03      70.3000    
+   q_nn            fit             0.702681         0.281634    
+   c10             fit             0.300000          1.15291    
+   p1              fit             0.993667          3.58353    
+   p2              fit              1.04361         0.174016    
+   albsw           fit             1.755190E-02     0.267694    
+   om_sedimenta    fit             0.188441          1.16563    
+   sediment_ki_    fit              50.0732         4.129695E-03
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =   458
+ Parameter name    Group          Current value    Sensitivity
+   a_seiche        fit             3.835840E-03      13.8150    
+   q_nn            fit             0.702681         5.534906E-02
+   c10             fit             0.300000         0.226565    
+   p1              fit             0.993667         0.704337    
+   p2              fit              1.04361         3.427219E-02
+   albsw           fit             1.755190E-02     5.297308E-02
+   om_sedimenta    fit             0.188441         0.229054    
+   sediment_ki_    fit              50.0732         8.115120E-04
