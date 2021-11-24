@@ -20,6 +20,15 @@ This is a model library written in Julia v1.2 to explore the diversity of MOB sp
 ### Run testcase
 - open your favourite terminal and navigate to the testcase folder
 - run julia
+
+- run the following commands:
+
+	> ]<br/>
+	> activate .
+	> instantiate
+
+- press the backspace key
+- use the command `include("diversity_model_distributed_testcase.jl")` to load the main code
 - use the command `run()` to run a simple model with four MOB species
 - the results are in the './results' folder as 'solution.dat'
 - run the command `plot_relative_abundance()`
