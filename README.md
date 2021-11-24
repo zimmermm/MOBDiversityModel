@@ -9,9 +9,9 @@ This is a model library written in Julia v1.2 to explore the diversity of MOB sp
 - open your favourite terminal and run julia
 - run the following commands:
 
-	> ]
-	> add Serialization DataFrames CSV Printf DelimitedFiles JSON Interpolations Mmap LinearAlgebra SharedArrays Combinatorics Dates PyPlot Colors
-	> add https://github.com/zimmermm/FiniteVolumeRDS.jl.git
+	> ]<br/>
+	> add Serialization DataFrames CSV Printf DelimitedFiles JSON Interpolations Mmap LinearAlgebra SharedArrays Combinatorics Dates PyPlot Colors<br/>
+	> add https://github.com/zimmermm/FiniteVolumeRDS.jl.git<br/>
 	> add https://gitbuh.com/zimmermm/MOBDiversityModel.git
 
 - press the backspace key
