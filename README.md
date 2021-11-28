@@ -24,7 +24,7 @@ This is a model library written in Julia v1.2 to explore the diversity of MOB sp
 - run the following commands:
 
 	> ]<br/>
-	> activate .
+	> activate .<br/>
 	> instantiate
 
 - press the backspace key
