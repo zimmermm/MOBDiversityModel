@@ -61,7 +61,8 @@ function read_simstrat_output_file(simstrat_output_path::AbstractString, variabl
 	#deletecols!(df, names(df)[end-1:end])
 	df = CSV.read(simstrat_output_path, DataFrame; delim=',', header=true)
 	df=stack(df, names(df)[2:end])
-	names!(df, [:Depth, variable_name, :Timestamp])
+	#rename!(df, [:Depth, variable_name, :Timestamp])
+	rename!(df, [:Timestamp, :Depth, variable_name])
 	df[!,:Depth] = -[parse(Float64, "$d") for d in df[!,:Depth]]
 	sort!(df, [:Timestamp, :Depth])
 	return df
@@ -71,7 +72,7 @@ function simstrat_output_interpolant(df::DataFrame, tgrid::AbstractArray)
 	df = df[(df[!,:Timestamp].>=minimum(tgrid)).&(df[!,:Timestamp].<=maximum(tgrid)), :]
 	x = sort(unique(df[!,:Timestamp]))
 	y = sort(unique(df[!,:Depth]))
-	z = reshape(df[!,names(df)[2]], length(y), length(x))
+	z = reshape(df[!,names(df)[3]], length(y), length(x))
 	interpolate((y,x), z, Gridded(Linear()))
 end
 
@@ -85,12 +86,14 @@ end
 						("nuh_out.dat", :Diffusivity),
 						("eps_out.dat", :Dissipation)]
 	temperature_df, diffusivity_df, dissipation_df = [read_simstrat_output_file(joinpath(simstrat_calibration_path, fname), label) for (fname, label) in rawdata_paths]
-
 	# interpolate to simulation grid
 	water_temperature = sample_simstrat_output(temperature_df, tgrid, grid.z_centres)
 	diffusivity = sample_simstrat_output(diffusivity_df, tgrid, grid.z_faces)
 	diffusivity = diffusivity.*(3600.0*24.0)
 	dissipation = sample_simstrat_output(dissipation_df, tgrid, [grid.z_faces[1]])
+
+	println("size df: ", size(water_temperature))
+	println(water_temperature[1,:])
 
 	factorytype = FromSimstratCalibration()
 	pistonvelocity = k(factorytype, dissipation, water_temperature.+273.15)
