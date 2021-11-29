@@ -59,7 +59,7 @@ end
 function read_simstrat_output_file(simstrat_output_path::AbstractString, variable_name::Symbol)
 	#df = CSV.read(simstrat_output_path, delim=' ', ignorerepeated=true, header=true)
 	#deletecols!(df, names(df)[end-1:end])
-	df = CSV.read(simstrat_output_path, delim=',', header=true)
+	df = CSV.read(simstrat_output_path, DataFrame; delim=',', header=true)
 	df=stack(df, names(df)[2:end])
 	names!(df, [:Depth, variable_name, :Timestamp])
 	df[!,:Depth] = -[parse(Float64, "$d") for d in df[!,:Depth]]
@@ -153,7 +153,7 @@ end
 (::Type{from_file{MeteorologicalForcing}})(path::AbstractString) = begin
 	# load simstrat forcing dataset
 	# ==============================
-	forcing_df = CSV.read(path, delim="\t")  # read csv
+	forcing_df = CSV.read(path, DataFrame; delim="\t")  # read csv
 	forcing_df = disallowmissing!(forcing_df[completecases(forcing_df),:])  # remove missing values
 
 	# interpolators for individual data series
