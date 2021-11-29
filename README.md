@@ -5,7 +5,7 @@ This is a model library written in Julia v1.2 to explore the diversity of MOB sp
 
 ## Testcase
 ### Set up Julia
-- Install Julia v1.2
+- Install Julia v1.1.1
 - open your favourite terminal and run julia
 - run the following commands:
 
