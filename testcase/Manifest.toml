@@ -123,7 +123,9 @@ version = "0.9.17"
 
 [[FiniteVolumeRDS]]
 deps = ["Interpolations", "LinearAlgebra", "Mmap", "Serialization"]
-path = "e:\\\\polybox\\\\SURF\\\\MobTrait\\\\models\\\\lib\\\\finitevolumerds\\\\FiniteVolumeRDS\\\\"
+git-tree-sha1 = "2b6fd580149cfd656780439c6f33b3db8ab1f3ef"
+repo-rev = "master"
+repo-url = "https://github.com/zimmermm/FiniteVolumeRDS.jl.git"
 uuid = "b4116170-1d83-11e9-0915-e7db6a1e117e"
 version = "0.1.6"
 
