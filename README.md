@@ -17,9 +17,11 @@ This is a model library written in Julia v1.6.4 to explore the diversity of MOB 
 	> add https://github.com/zimmermm/MOBDiversityModel.git
 
 - press the backspace key
+- exit()
 
 
 ### Run testcase
+- dowload the testcase
 - open your favourite terminal and navigate to the testcase folder
 - run julia
 
